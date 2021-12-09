@@ -5,9 +5,11 @@
   </div>
   <div class="container-2 w-container">
     <!-- <a href="#" class="button w-button">Start Job Payment</a> -->
-    <button class="button w-button">Checkout</button>
-    <%= link_to new_job_payment_path do %>
-      <button class="button green-button w-button">Start Payment</button>
+    <%= link_to new_job_payment_path, class: "button w-button" do %>
+      Start Job Payment
+    <% end %>
+    <%= link_to new_job_payment_path, class: "button green-button w-button" do %>
+      Manage Payments
     <% end %>
   </div>
   <div class="container-4 w-container"><img src="https://res.cloudinary.com/dqis0vswg/image/upload/v1638313009/undraw_under_construction_46pa-removebg-preview.png" loading="lazy" sizes="(max-width: 479px) 92vw, (max-width: 673px) 94vw, 633px" srcset="https://res.cloudinary.com/dqis0vswg/image/upload/v1638313009/undraw_under_construction_46pa-removebg-preview.png" alt=""></div>
