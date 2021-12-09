@@ -1,0 +1,2 @@
+class JobPayment < ApplicationRecord
+end

@@ -1,0 +1,70 @@
+.flexbox {
+  display: flex !important;
+}
+
+.flexbox-center{
+  display: flexbox;
+  justify-content: center;
+}
+
+.flexbox-space-around {
+  display: flex !important;
+  justify-content: space-around !important;
+}
+
+.flexbox-space-around-center {
+  display: flex !important;
+  justify-content: space-around !important;
+  align-items: center !important;
+}
+
+
+
+.flexbox-space-between {
+  display: flex !important;
+  justify-content: space-between !important;
+}
+
+.flexbox-space-between-center {
+  display: flex !important;
+  justify-content: space-between !important;
+  align-items: center !important;
+}
+
+.flexbox-flex-start-space-between{
+  display: flex !important;
+  align-items: flex-start !important;
+  justify-content: space-between !important;
+}
+
+.flexbox-column{
+  display: flex !important;
+  flex-direction: column !important;
+}
+
+.flexbox-column-space-between{
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: space-between !important;
+  align-items: center !important;
+}
+
+.flexbox-column-space-around{
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: space-around !important;
+  align-items: center !important;
+}
+
+.flexbox-column-space-around-hideable{
+  display: flex;
+  flex-direction: column !important;
+  justify-content: space-around !important;
+  align-items: center !important;
+}
+
+// grow and shrink options
+
+.flex-grow{
+  flex-grow: 1;
+}
