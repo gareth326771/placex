@@ -5,9 +5,9 @@
   </div>
   <div class="container-2 w-container">
     <!-- <a href="#" class="button w-button">Start Job Payment</a> -->
-    <button class="checkout button w-button">Checkout</button>
-    <%= link_to new_job_payment_path, remote: true do %>
-      <button class="button green-button w-button">Manage Payment</button>
+    <button class="button w-button">Checkout</button>
+    <%= link_to new_job_payment_path do %>
+      <button class="button green-button w-button">Start Payment</button>
     <% end %>
   </div>
   <div class="container-4 w-container"><img src="https://res.cloudinary.com/dqis0vswg/image/upload/v1638313009/undraw_under_construction_46pa-removebg-preview.png" loading="lazy" sizes="(max-width: 479px) 92vw, (max-width: 673px) 94vw, 633px" srcset="https://res.cloudinary.com/dqis0vswg/image/upload/v1638313009/undraw_under_construction_46pa-removebg-preview.png" alt=""></div>
@@ -25,7 +25,7 @@
     <div class="feature-image-mask hard-hat-div"><img src="https://res.cloudinary.com/dqis0vswg/image/upload/v1638353108/HardHat1.png" sizes="(max-width: 479px) 73vw, (max-width: 767px) 95vw, (max-width: 991px) 345.84375px, 509.5625px" srcset="https://res.cloudinary.com/dqis0vswg/image/upload/v1638353108/HardHat1.png" alt="" class="feature-image hard-hat"></div>
     <div>
       <h2 class="grey-heading">Benefits for tradesmen<span class="blue-stop">.</span></h2>
-      <ul role="list">
+      <ul role="list" class="home-list">
         <li class="list-item">Ensure customers have the money <strong>before</strong> starting a job<span class="blue-stop">.</span></li>
         <li class="list-item">Reduce late and non-payments for work completed<span>.</span></li>
         <li class="list-item">Fair dispute resolution service provided in the event of customer disputes<span class="blue-stop">.</span></li>
@@ -37,7 +37,7 @@
   <div class="flex-container w-container">
     <div>
       <h2 class="grey-heading">Benefits for customers<span class="blue-stop">.</span></h2>
-      <ul role="list">
+      <ul role="list" class="home-list">
         <li class="list-item">Agree terms upfront and only pay when work done<span class="blue-stop">.</span></li>
         <li class="list-item">Protect against &#x27;rogue&#x27; and &#x27;cowboy&#x27; traders<span>.</span></li>
         <li class="list-item">Fair dispute resolution service provided in the event of disputes<span class="blue-stop">.</span></li>
