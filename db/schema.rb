@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_12_08_223227) do
+ActiveRecord::Schema.define(version: 2021_12_12_194045) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -61,7 +61,7 @@ ActiveRecord::Schema.define(version: 2021_12_08_223227) do
     t.datetime "updated_at", precision: 6, null: false
     t.integer "buyer_id"
     t.integer "seller_id"
-    t.integer "amount"
+    t.integer "amount_cents"
     t.string "description"
     t.text "detailed_description"
     t.integer "deposit_amount"

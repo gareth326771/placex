@@ -1,58 +1,115 @@
-  <div class="section hero wf-section">
-    <h1 class="heading">Start a job payment<span class="blue-stop">.</span></h1>
-    <p class="paragraph-3">Fill the below details to use our secure online deposit platform<span class="blue-stop">.</span></p>
-    <div class="new-jp-form w-container-form padding-10">
-      <div class="w-form g-3 form-group">
-        <%= form_for JobPayment.new, html: {"name" => "email-form", 'data-name' => "Email Form"}, "class" => "form",  "id" => "email-form" do |f| %>
-          <%= f.select :initiating_party, ["Tradesman", "Customer"], { :include_blank => 'I am a ...'}, class: "select-field w-select", id: "Select-Party", required: true %>
-          <label for="name" class="form-label">Tradesman email<span class="blue-stop">.</span></label>
-          <%= f.email_field :tradesman_email, class: "text-field w-input", id: "name", html: {"maxlength" => "256", "name" => "name", "data-name" => "Name"}, placeholder: "Enter Tradesman email ...", required: true %>
-          <label for="email" class="form-label">Customer email<span class="blue-stop">.</span></label>
-          <%= f.email_field :customer_email, class: "text-field w-input", id: "email", html: {"maxlength" => "256", "name" => "name", "data-name" => "Name"}, placeholder: "Enter Customer email ...", required: true %>
-          <label for="job-cost" class="form-label">Total job cost in £<span class="blue-stop">.</span></label>
-          <%= f.number_field :amount, value: number_to_currency(f.object.amount.to_f, delimiter: '', unit: '£', format: ), step: 0.5, class: "text-field w-input", id: "job-cost", html: {"type" => "number", "name" => "job-cost", "data-name" => "job cost"}, placeholder: 'E.g. "1000.00" ...', required: true %>
-          <label for="short-description" class="form-label blue-stop">Short description<span class="blue-stop">.</span></label>
-          <%= f.text_field :short_description, class: "text-field w-input", id: "short-description", html: {"type" => "text", "name" => "short-description", "data-name" => "short description"}, placeholder: 'E.g. "Decking job" ...', required: true %>
-          <%= f.submit "Start Payment", class: "button w-button" %>
-        <% end %>
+    <div class="section hero wf-section">
+      <h1 class="heading">Start a job payment<span class="blue-stop">.</span></h1>
+      <p class="paragraph-3">Fill the below details to use our secure online deposit platform<span class="blue-stop"> <i class="fas fa-shield-alt margin-right-10 padding"></i></span></p>
+      <div class="new-jp-form w-container-form padding-10">
+        <div class="w-form g-3 form-group">
+          <%= form_for JobPayment.new, html: {"name" => "email-form", 'data-name' => "Email Form"}, "class" => "form",  "id" => "email-form" do |f| %>
+            <%= f.select :initiating_party, ["Tradesman", "Customer"], { :include_blank => 'I am a ...'}, class: "select-field w-select", id: "Select-Party", required: true %>
+            <label for="name" class="form-label">Tradesman email<span class="blue-stop">.</span></label>
+              <%= f.email_field :tradesman_email, class: "text-field w-input", id: "name", html: {"maxlength" => "256", "name" => "name", "data-name" => "Name"}, placeholder: "Enter Tradesman email ...", required: true %>
+            <div id="tradesman-mobile" style="display: none">
+            <label for="phone" class="form-label">Tradesman mobile<span class="blue-stop">.</span></label>
+              <%= f.telephone_field :tradesmen_mobile, class: "text-field w-input", id: "phone", html: {"maxlength" => "256", "name" => "name", "data-name" => "Name"}, placeholder: 'E.g. "07592763525" ...', required: true %>
+            </div>
+            <label for="email" class="form-label">Customer email<span class="blue-stop">.</span></label>
+            <%= f.email_field :customer_email, class: "text-field w-input", id: "email", html: {"maxlength" => "256", "name" => "name", "data-name" => "Name"}, placeholder: "Enter Customer email ...", required: true %>
+            <label for="job-cost" class="form-label">Total job cost in £<span class="blue-stop">.</span></label>
+            <%= f.number_field :amount_cents, value: number_to_currency(f.object.amount.to_f, delimiter: '', unit: '£', step: 0.01), step: 0.01, class: "text-field w-input", id: "job-cost", html: {"type" => "number", "name" => "job-cost", "data-name" => "job cost"}, placeholder: 'E.g. "1000.00" ...', required: true %>
+            <label for="short-description" class="form-label blue-stop">Short description<span class="blue-stop">.</span></label>
+            <%= f.text_field :description, class: "text-field w-input", id: "short-description", html: {"type" => "text", "name" => "short-description", "data-name" => "short description"}, placeholder: 'E.g. "Decking job" ...', required: true %>
+            <label for="full-description" class="form-label">Full description<span class="blue-stop">.</span></label>
+            <%= f.text_area :detailed_description, class: "text-field w-input", id: "short-description", html: {"type" => "text", "name" => "short-description", "data-name" => "short description"}, placeholder: 'E.g. "Decking job to take 5 working days using pre-agreed composite materials, payment to be released 3 working days after completion" ...', rows: "6", required: true %>
+            <div class="flexbox-space-around-center margin-top-40">
+              <%= f.button(type: 'submit', class: "button w-button") do %>
+                <i class="fas fa-shield-alt margin-right-10 padding-bottom-6"></i> Start
+              <% end %>
+            </div>
+          <% end %>
+        </div>
       </div>
     </div>
-    <div class="container-4 w-container"></div>
-  </div>
-  <div data-anchor="slide1" class="section">
-    <div class="w-container">
-      <h2 class="grey-heading">FAQ<span class="blue-stop">.</span></h2>
+    <div data-anchor="slide1" class="section">
+      <div class="w-container">
+        <h2 class="grey-heading">FAQ<span class="blue-stop">.</span></h2>
+      </div>
+      <div class="container padding-top-40 padding-bottom-40">
+    <div class="accordion" id="accordionExample">
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingOne">
+          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+            What Is Pay The Trade?
+          </button>
+        </h2>
+        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            Pay The Trade is a new and secure way to pay tradesmen or for tradesmen to request payment from their customers. It ensures trust in the transaction through providing a secure online deposit box that customers pay into ahead of work commencing. The money is then released by the customer either at agreed milestones or after the work is completed.
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingFive">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+            Why Use Pay The Trade?
+          </button>
+        </h2>
+        <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            Pay The Trade protects customers from rogue tradesmen and tradesmen from delinquent customers. Avoid difficult situations where either party does not fulfil their obligations and ensure the transaction goes as smooth as possible.
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingTwo">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+            How Does It Work For Customers?
+          </button>
+        </h2>
+        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            Customers can avoid getting stung by 'rogue' tradesmen by using Pay The Trade, any upstanding tradesman should agree to use the service! Before starting a job payment agree terms with the tradesman, including any milestones when you will release money and be sure to write these down in case of disputes. Once agreed you can start a job by selecting 'Start Job Payment' on the Pay The Trade website and filling out the details. You will be required to pay the whole amount in and will need to add 1% (our customer fee) to the total. Once done, an email will be sent to the tradesman for them to set up an account and work can commence. Once you are happy with the work done you can release the money. In the event of a dispute please try and resolve with your tradesman in person however if agreement can not be reached, Pay The Trade will step in to help resolve it.
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingThree">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+            How Does It Work For Tradesmen?
+          </button>
+        </h2>
+        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            Tradesmen can avoid non-payment and can see before commencing work the customer has all the money using Pay The Trade. Agree with the customer upfront to use the service and as the cost is only 1% more for the added security any upstanding customer should be happy to use the service! From there agree the terms with the customer including any milestones when money will be released. Once agreed you can create a job payment through the site or by loging in if you have already created an account. An email will be sent to the customer who will then be able to add the whole amount for the job, or you can ask them to scan a QR code to pay. Customers will release the money once the work is completed or milestones are hit, you will be able to withdraw 1% less than the customer has put in which is our fee. In the event of a dispute please try and resolve with your customer in person however if agreement can not be reached, Pay The Trade will step in to help resolve it. You can use Pay The Trade for all your customers by easily creating new payments from your dashboard to make every job payment secure.
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingFour">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+            What Happens In A Dispute?
+          </button>
+        </h2>
+        <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            Both parties are encouraged to resolve disputes in person without using Pay The Trade dispute resolution service. However in the event of a dispute that can not be resolved Pay The Trade will step in and decide to release the money to the client or the tradesman. Remember to keep as much evidence as possible including scope of work, materials to be used etc. If you are in dispute you can contact us any time on the site chat.
+          </div>
+        </div>
+      </div>
+
     </div>
-    <div class="container-3 w-container">
-      <p class="paragraph-2">Customers pay into our <strong>secure online deposit box</strong> at the start of a job, money is released when agreed milestones are hit<span class="blue-stop">.</span></p>
-    </div>
   </div>
-
-
-
-          <form id="email-form" name="email-form" data-name="Email Form" class="form">
-            <select id="Select-Party" name="Select-Party" data-name="Select Party" required="" class="select-field w-select">
-              <option value="">I am a ...</option>
-              <option value="First">Tradesman</option>
-              <option value="Second">Customer</option>
-            </select>
-            <label for="name" class="form-label">Tradesman email<span class="blue-stop">.</span></label><input type="email" class="text-field w-input" maxlength="256" name="name" data-name="Name" placeholder="Enter Tradesman email ..." id="name" required="">
-
-            <label for="email" class="form-label">Customer email<span class="blue-stop">.</span></label><input type="email" class="text-field w-input" maxlength="256" name="email" data-name="Email" placeholder="Enter Customer email ..." id="email" required="">
-
-            <label for="job-cost" class="form-label">Total job cost in £<span class="blue-stop">.</span></label><input type="number" class="text-field w-input" maxlength="256" name="job-cost" data-name="job cost" placeholder="Enter the job cost in £ ..." id="job-cost" required="">
-
-            <label for="short-description" class="form-label blue-stop">Short description<span class="blue-stop">.</span></label><input type="text" class="text-field w-input" maxlength="256" name="short-description" data-name="short description" placeholder="E.g. &quot;Decking job&quot; ..." id="short-description" required="">
-
-            <label for="full-description" class="form-label">Full description<span class="blue-stop">.</span></label><textarea placeholder="E.g. &quot;Decking job to take 5 working days using pre-agreed composite materials, payment to be released 3 working days after completion&quot; ..." maxlength="5000" id="full-description" name="full-description" required="" data-name="field" class="textarea w-input"></textarea>
-
-            <div class="div-block submit-form-btn-div w-clearfix"><input type="submit" value="Submit" data-wait="Please wait..." class="button w-button"></div>
-          </form>
+</div>
 
 
 
 
-
+<script>
+  $('#Select-Party').on('change', function() {
+    if ( this.value == 'Tradesman')
+      $("#tradesman-mobile").show();
+    else
+      $("#tradesman-mobile").hide();
+  })
+</script>
 
 
 
