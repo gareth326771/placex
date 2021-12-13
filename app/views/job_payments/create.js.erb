@@ -1,0 +1,17 @@
+  // document
+  // .querySelector('.checkout')
+  // .addEventListener('click', () => {
+   console.log('jjjjjj')
+    if (document.getElementById('Select-Party').value == 'Customer') {
+      trustshare.checkout.modal({
+        to: document.getElementById('name').value,
+        from: document.getElementById('email').value,
+        amount: document.getElementById('job-cost').value,
+        description: document.getElementById('short-description').value,
+        onClose({ status, token }) {
+          // see `status` table below
+          console.log({ status, token });
+        }
+      })
+    }
+  // })

@@ -7,3 +7,21 @@
 .text-field{
   color: rgba(0, 0, 0, 0.45) !important;
 }
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active  {
+  color: rgba(0, 0, 0, 0.45) !important;
+}
+
+input:-internal-autofill-selected {
+    color: rgba(0, 0, 0, 0.45) !important;
+}
+
+.w-input:focus {
+    border-color: #247ba0;
+    outline: 0;
+    color: rgba(0, 0, 0, 0.45) !important;
+}
+
