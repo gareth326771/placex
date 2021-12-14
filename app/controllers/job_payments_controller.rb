@@ -17,4 +17,6 @@ class JobPaymentsController < ApplicationController
     #   redirect_to new_job_payments_path
     # end
   end
+
+
 end

@@ -1,7 +1,7 @@
+
   // document
   // .querySelector('.checkout')
   // .addEventListener('click', () => {
-   console.log('jjjjjj')
     if (document.getElementById('Select-Party').value == 'Customer') {
       trustshare.checkout.modal({
         to: document.getElementById('name').value,
@@ -14,4 +14,15 @@
         }
       })
     }
+
+  $('#Select-Party').prop('selectedIndex',0);
+  $('#name').val('')
+  $('#email').val('')
+  $('#job-cost').val('')
+  $('#short-description').val('')
+  $('#long-description').val('')
+
+
+
+
   // })
