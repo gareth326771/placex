@@ -1,28 +1,23 @@
-
-  // document
-  // .querySelector('.checkout')
-  // .addEventListener('click', () => {
-    if (document.getElementById('Select-Party').value == 'Customer') {
-      trustshare.checkout.modal({
-        to: document.getElementById('name').value,
-        from: document.getElementById('email').value,
-        amount: document.getElementById('job-cost').value,
-        description: document.getElementById('short-description').value,
-        onClose({ status, token }) {
-          // see `status` table below
-          console.log({ status, token });
-        }
-      })
+if (document.getElementById('Select-Party').value == 'Customer') {
+  trustshare.checkout.modal({
+    to: document.getElementById('name').value,
+    from: document.getElementById('email').value,
+    amount: document.getElementById('job-cost').value,
+    description: document.getElementById('short-description').value,
+    onClose({ status, token }) {
+      // see `status` table below
+      console.log({ status, token });
     }
-
+  });
   $('#Select-Party').prop('selectedIndex',0);
-  $('#name').val('')
-  $('#email').val('')
-  $('#job-cost').val('')
-  $('#short-description').val('')
-  $('#long-description').val('')
+  $('#name').val('');
+  $('#email').val('');
+  $('#job-cost').val('');
+  $('#short-description').val('');
+  $('#long-description').val('');
+}else if (document.getElementById('Select-Party').value == 'Tradesman') {
+  $('#tradesman-content').html("<%= j render 'tradesman_modal', shortened_link: @shortened_link%>");
+  $('#tradesman-modal').modal('show');
+}
 
 
-
-
-  // })

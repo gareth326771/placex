@@ -1,21 +1,30 @@
 class JobPaymentsController < ApplicationController
 
   def new
-    @job_payement = JobPayment.new
+    @job_payment = JobPayment.new
   end
 
   def create
-
+    if params[:job_payment][:initiating_party] == 'Tradesman'
+      @job_payment = JobPayment.create(strong_job_payment)
+      tradesman_email = params[:job_payment][:tradesman_email]
+      amount = params[:job_payment][:amount_cents]
+      short_description = params[:job_payment][:description]
+      builders_link = 'http://placer-it.sandbox.trustshare.co/checkout?to=' + tradesman_email + '&amount=' + amount + '&description=' + short_description
+      @shortened_link =  Link.shorten(builders_link)
+      @qr_link = 'http://placer-it.sandbox.trustshare.co/qr.png?to=' + tradesman_email + '&amount=' + amount + '&description=' + short_description
+      @job_payment.link = Link.last
+      @job_payment.save
+    else
+      @job_payment = JobPayment.create(job_payment_params)
+    end
     respond_to do |format|
       format.js
     end
-    # @job_payment = JobPayment.create(job_payment_params)
-    # if @job_payment.save
-    #   render head :ok
-    # else
-    #   flash[:notice] = "Could not start payment. Please check form details."
-    #   redirect_to new_job_payments_path
-    # end
+  end
+
+  def strong_job_payment
+    params.require(:job_payment).permit(:link_id, :amount_cents, :description, :detailed_description, :initiating_party, :tradesman_email, :customer_email, :tradesman_mobile, :deposit )
   end
 
 

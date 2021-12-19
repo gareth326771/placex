@@ -17,6 +17,7 @@ Rails.application.routes.draw do
   get '/tradesmen', to: 'home#tradesmen', as: :tradesmen
   get '/faq', to: 'home#faq', as: :faq
 
+  get '/s/:slug', to: 'links#show', as: :short
   resources :job_payments
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
 end

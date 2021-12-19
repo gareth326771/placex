@@ -1,0 +1,83 @@
+<div id="tradesman-modal" class="modal fade" role="dialog">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+       <!--Body-->
+        <div class="modal-body">
+          <button class="close" id="close-button" data-dismiss="modal">&times;</button>
+<!--           <img src="<%#= @offer.brand.logo %>" class="avatar-bordered-large"  /> -->
+      <!--     <div class="row d-flex justify-content-center align-items-center"> -->
+          <h5 class="grey-heading margin-top-20">Please copy the link and send to the customer<span class="blue-stop">.</span></h5>
+          <div class="coupon-div">
+              <p id="code"><%= shortened_link %></p>
+              <a class="btn btn-success margin-left-20" id="copy-button">Copy
+                <i class="fas fa-book ml-1 white-text"></i>
+              </a>
+          </div>
+          <h5 class="grey-heading margin-top-40"> <span class="blue-stop"> - </span> Or <span class="blue-stop"> - </span> </h5>
+          <div class="text-center margin-top-20 margin-bottom-10">
+            <a href="<%= @qr_link %>" class="text-center blue-link" >
+              Ask customer to scan QR now <i class="fas fa-caret-right"></i>
+            </a>
+            <div class="modal-tip">
+              <p class="text-center"><span class="blue-stop"><strong>Tip: </strong></span>Copy the link and send to the customer via text, Whatsapp or email; or ask the customer to scan the QR now.</p>
+            </div>
+          </div>
+          <!--   <a type="button" class="btn btn-outline-success waves-effect" data-dismiss="modal">No, thanks</a> -->
+        </div>
+<!--       </div> -->
+      <div class="modal-bottom">
+        <div class="flexbox-space-around-center">
+ <!--          <img src="https://res.cloudinary.com/dqis0vswg/image/upload/v1606948432/PLACER__2_-removebg-preview.png" alt=""> -->
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+<script>
+
+  document.getElementById('copy-button').addEventListener('click', function(){
+    var textarea = document.createElement('textarea');
+    textarea.textContent = document.getElementById('code').innerText;
+    document.body.appendChild(textarea);
+    $('#copy-button').html('Link Copied <i class="fas fa-clipboard-check"></i>')
+
+    var selection = document.getSelection();
+    var range = document.createRange();
+  //  range.selectNodeContents(textarea);
+    range.selectNode(textarea);
+    selection.removeAllRanges();
+    selection.addRange(range);
+
+    console.log('copy success', document.execCommand('copy'));
+    selection.removeAllRanges();
+
+    document.body.removeChild(textarea);
+    let timerInterval
+    Swal.fire({
+
+      title: 'Link copied.',
+      type: 'success',
+      timer: 1000,
+      showConfirmButton: false,
+      // background: '#36393f',
+      // customClass: {
+      //     title: 'swal-title',
+      // },
+      onClose: () => {
+        clearInterval(timerInterval)
+      }
+    }).then((result) => {
+      /* Read more about handling dismissals below */
+      if (result.dismiss === Swal.DismissReason.timer) {
+        console.log('I was closed by the timer')
+      }
+    })
+
+  })
+
+   document.getElementById('close-button').addEventListener('click', function(){
+      $('#tradesman-modal').modal('toggle');
+  });
+
+</script>

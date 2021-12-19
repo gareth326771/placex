@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_12_12_194045) do
+ActiveRecord::Schema.define(version: 2021_12_19_172336) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -65,6 +65,21 @@ ActiveRecord::Schema.define(version: 2021_12_12_194045) do
     t.string "description"
     t.text "detailed_description"
     t.integer "deposit_amount"
+    t.string "initiating_party"
+    t.string "tradesman_email"
+    t.string "customer_email"
+    t.string "short_description"
+    t.string "tradesman_mobile"
+  end
+
+  create_table "links", force: :cascade do |t|
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.text "url"
+    t.text "slug"
+    t.integer "clicked", default: 0
+    t.bigint "job_payment_id"
+    t.index ["job_payment_id"], name: "index_links_on_job_payment_id"
   end
 
   create_table "notifications", force: :cascade do |t|
@@ -110,5 +125,6 @@ ActiveRecord::Schema.define(version: 2021_12_12_194045) do
   end
 
   add_foreign_key "active_storage_attachments", "active_storage_blobs", column: "blob_id"
+  add_foreign_key "links", "job_payments"
   add_foreign_key "services", "users"
 end
