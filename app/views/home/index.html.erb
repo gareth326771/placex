@@ -4,13 +4,10 @@
     <p class="paragraph-3">Designed for both customers and tradesmen, for any size job<span class="blue-stop">.</span></p>
   </div>
   <div class="container-2 w-container">
-    <!-- <a href="#" class="button w-button">Start Job Payment</a> -->
     <%= link_to new_job_payment_path, class: "button w-button" do %>
       Start Job Payment
     <% end %>
-    <%= link_to new_job_payment_path, class: "button green-button w-button" do %>
-      Manage Payments
-    <% end %>
+    <a href="https://placer-it.sandbox.trustshare.co/", class="button green-button w-button"> Manage Payments</a>
   </div>
   <div class="container-4 w-container"><img src="https://res.cloudinary.com/dqis0vswg/image/upload/v1638313009/undraw_under_construction_46pa-removebg-preview.png" loading="lazy" sizes="(max-width: 479px) 92vw, (max-width: 673px) 94vw, 633px" srcset="https://res.cloudinary.com/dqis0vswg/image/upload/v1638313009/undraw_under_construction_46pa-removebg-preview.png" alt=""></div>
 </div>
@@ -68,8 +65,10 @@
     <p class="paragraph-4">Customer or a tradesman? Start a job payment below to transact with peace of mind<span class="blue-stop">.</span></p>
   </div>
   <div class="container-2 w-container">
-    <a href="#" class="button w-button">Start Job Payment</a>
-    <a href="#" class="button green-button w-button">Manage Payment</a>
+    <%= link_to new_job_payment_path, class: "button w-button" do %>
+      Start Job Payment
+    <% end %>
+    <a href="https://placer-it.sandbox.trustshare.co/", class="button green-button w-button"> Manage Payments</a>
   </div>
 </div>
 

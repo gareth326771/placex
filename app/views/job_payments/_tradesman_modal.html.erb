@@ -15,7 +15,7 @@
           </div>
           <h5 class="grey-heading margin-top-40"> <span class="blue-stop"> - </span> Or <span class="blue-stop"> - </span> </h5>
           <div class="text-center margin-top-20 margin-bottom-10">
-            <a href="<%= @qr_link %>" class="text-center blue-link" >
+            <a href="<%= @qr_link %>" class="text-center blue-link" id="qr-link" >
               Ask customer to scan QR now <i class="fas fa-caret-right"></i>
             </a>
             <div class="modal-tip">
@@ -74,10 +74,28 @@
       }
     })
 
+    $('#Select-Party').prop('selectedIndex',0);
+    $('#name').val('');
+    $('#email').val('');
+    $('#phone').val('');
+    $('#job-cost').val('');
+    $('#short-description').val('');
+    $('#long-description').val('');
+
   })
 
    document.getElementById('close-button').addEventListener('click', function(){
       $('#tradesman-modal').modal('toggle');
+  });
+
+    document.getElementById('qr-link').addEventListener('click', function(){
+      $('#Select-Party').prop('selectedIndex',0);
+      $('#name').val('');
+      $('#email').val('');
+      $('#phone').val('');
+      $('#job-cost').val('');
+      $('#short-description').val('');
+      $('#long-description').val('');
   });
 
 </script>
