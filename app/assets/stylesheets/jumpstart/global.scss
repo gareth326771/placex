@@ -18,3 +18,28 @@ h1, h2, h3, h4, h5, h6{
 
 }
 
+// webflow corrections
+
+
+// optimise home images for mobile
+
+  @media screen and (max-width: 479px){
+      .feature-image.hard-hat {
+    width: 40% !important;
+  }
+   .feature-image-mask.hard-hat-div{
+    padding-bottom: 40px !important;
+   }
+   .reverse-feature-image{
+      margin-right: 0px !important;
+      width: 40% !important;
+      margin-bottom: -40px !important;
+   }
+  }
+
+
+  @media screen and (max-width: 479px){
+    .credit-card-image {
+      max-width: 70%;
+   }
+  }
