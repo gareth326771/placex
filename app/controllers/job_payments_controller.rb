@@ -10,13 +10,13 @@ class JobPaymentsController < ApplicationController
       tradesman_email = params[:job_payment][:tradesman_email]
       amount = params[:job_payment][:amount_cents]
       short_description = params[:job_payment][:description]
-      builders_link = 'http://placer-it.sandbox.trustshare.co/checkout?to=' + tradesman_email + '&amount=' + amount + '&description=' + short_description
+      builders_link = 'http://paythetrade.trustshare.co/checkout?to=' + tradesman_email + '&amount=' + amount + '&description=' + short_description
       @shortened_link =  Link.shorten(builders_link)
-      @qr_link = 'http://placer-it.sandbox.trustshare.co/qr.png?to=' + tradesman_email + '&amount=' + amount + '&description=' + short_description
+      @qr_link = 'http://paythetrade.trustshare.co/qr.png?to=' + tradesman_email + '&amount=' + amount + '&description=' + short_description
       @job_payment.link = Link.last
       @job_payment.save
     else
-      @job_payment = JobPayment.create(job_payment_params)
+      @job_payment = JobPayment.create(strong_job_payment)
     end
     respond_to do |format|
       format.js
