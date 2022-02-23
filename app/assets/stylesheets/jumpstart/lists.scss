@@ -1,34 +1,34 @@
 
 
-ul li{
-  list-style: none !important; /* Remove default bullets */
-}
+// ul li{
+//   list-style: none !important; /* Remove default bullets */
+// }
 
-.home-list > li::before {
-  content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
-  color: #247ba0; /* Change the color */
-  font-weight: bold; /* If you want it to be bold */
-  display: inline-block; /* Needed to add space between the bullet and the text */
-  width: 1em; /* Also needed for space (tweak if needed) */
-  margin-left: -1em; /* Also needed for space (tweak if needed) */
-}
+// .home-list > li::before {
+//   content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+//   color: #247ba0; /* Change the color */
+//   font-weight: bold; /* If you want it to be bold */
+//   display: inline-block; /* Needed to add space between the bullet and the text */
+//   width: 1em; /* Also needed for space (tweak if needed) */
+//   margin-left: -1em; /* Also needed for space (tweak if needed) */
+// }
 
-@media (max-device-width: 767px) {
-  li{
-    font-size: 16px !important;
-  }
-  .paragraph-4 {
-     font-size: 16px !important;
-  }
-}
+// @media (max-device-width: 767px) {
+//   li{
+//     font-size: 16px !important;
+//   }
+//   .paragraph-4 {
+//      font-size: 16px !important;
+//   }
+// }
 
 
-.terms-li{
-   font-size: 23px !important;
-   list-style-type: circle;
-   text-indent: 0px;
-    padding-left: 25px;
-}
+// .terms-li{
+//    font-size: 23px !important;
+//    list-style-type: circle;
+//    text-indent: 0px;
+//     padding-left: 25px;
+// }
 
 // @media (max-device-width: 767px) {
 // .terms-li{

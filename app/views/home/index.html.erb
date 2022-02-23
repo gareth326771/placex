@@ -1,76 +1,243 @@
-<div class="section hero wf-section">
-  <div class="container w-container">
-    <h1 class="heading">The quick and secure way for anyone to pay tradesmen<span class="blue-stop">.</span></h1>
-    <p class="paragraph-3">Designed for both customers and tradesmen, for any size job<span class="blue-stop">.</span></p>
-  </div>
-  <div class="container-2 w-container">
-    <%= link_to new_job_payment_path, class: "button w-button" do %>
-      Start Job Payment
-    <% end %>
-    <a href="https://paythetrade.trustshare.co/", class="button green-button w-button"> Manage Payments</a>
-  </div>
-  <div class="container-4 w-container"><img src="https://res.cloudinary.com/dqis0vswg/image/upload/v1638313009/undraw_under_construction_46pa-removebg-preview.png" loading="lazy" sizes="(max-width: 479px) 92vw, (max-width: 673px) 94vw, 633px" srcset="https://res.cloudinary.com/dqis0vswg/image/upload/v1638313009/undraw_under_construction_46pa-removebg-preview.png" alt=""></div>
-</div>
-<div data-anchor="slide1" class="section grey">
-  <div class="w-container">
-    <h2 class="grey-heading">How it works<span class="blue-stop">.</span></h2>
-  </div>
-  <div class="container-3 w-container"><img src="https://res.cloudinary.com/dqis0vswg/image/upload/v1638352110/undraw_Vault_re_s4my-removebg-preview.png" loading="lazy" sizes="(max-width: 479px) 79vw, (max-width: 991px) 87vw, 705px" srcset="https://res.cloudinary.com/dqis0vswg/image/upload/v1638352110/undraw_Vault_re_s4my-removebg-preview.png" alt="">
-    <p class="paragraph-2">Customers pay into our <strong>secure online deposit box</strong> at the start of a job, money is released when agreed milestones are hit or at the end of the job<span class="blue-stop">.</span></p>
-  </div>
-</div>
-<section id="feature-section" class="feature-section wf-section">
-  <div class="flex-container w-container">
-    <div class="feature-image-mask hard-hat-div"><img src="https://res.cloudinary.com/dqis0vswg/image/upload/v1638353108/HardHat1.png" sizes="(max-width: 479px) 73vw, (max-width: 767px) 95vw, (max-width: 991px) 345.84375px, 509.5625px" srcset="https://res.cloudinary.com/dqis0vswg/image/upload/v1638353108/HardHat1.png" alt="" class="feature-image hard-hat"></div>
-    <div>
-      <h2 class="grey-heading">Benefits for tradesmen<span class="blue-stop">.</span></h2>
-      <ul role="list" class="home-list">
-        <li class="list-item">Ensure customers have the money <strong>before</strong> starting a job<span class="blue-stop">.</span></li>
-        <li class="list-item">Reduce late and non-payments for work completed<span>.</span></li>
-        <li class="list-item">Fair dispute resolution service provided in the event of customer disputes<span class="blue-stop">.</span></li>
-      </ul>
-    </div>
-  </div>
-</section>
-<section id="feature-section" class="feature-section gray-feature wf-section">
-  <div class="flex-container w-container">
-    <div>
-      <h2 class="grey-heading">Benefits for customers<span class="blue-stop">.</span></h2>
-      <ul role="list" class="home-list">
-        <li class="list-item">Agree terms upfront and only pay when work done<span class="blue-stop">.</span></li>
-        <li class="list-item">Protect against &#x27;rogue&#x27; and &#x27;cowboy&#x27; traders<span>.</span></li>
-        <li class="list-item">Fair dispute resolution service provided in the event of disputes<span class="blue-stop">.</span></li>
-      </ul>
-    </div>
-    <div class="feature-image-mask hard-hat-div"><img src="https://res.cloudinary.com/dqis0vswg/image/upload/v1638353364/Customer-removebg-preview.png" alt="" class="feature-image reverse-feature-image"></div>
-  </div>
-</section>
-<div class="section">
-  <div class="w-container">
-    <h2 class="grey-heading">The Pricing<span class="blue-stop">.</span></h2>
-    <p class="paragraph-4">2% of the cost of the job, with 1% paid by the customer and 1% paid by the tradesman<span class="blue-stop">. </span></p>
-    <div class="image-crop"><img src="https://res.cloudinary.com/dqis0vswg/image/upload/v1638353636/undraw_Online_payments_re_y8f2.png" loading="lazy" width="400" sizes="(max-width: 479px) 100vw, 400px" srcset="https://res.cloudinary.com/dqis0vswg/image/upload/v1638353636/undraw_Online_payments_re_y8f2.png" alt="" class="credit-card-image"></div>
-    <p class="paragraph-4 example-pg"><strong class="bold-text">Example:</strong><em> for </em><em class="italic-text">a landscape gardening project costing £1,000 the customer deposits £1,010 and the tradesman withdraws £990</em><span class="blue-stop">. </span></p>
-  </div>
-</div>
-<div class="section gray-background">
-  <div class="w-container">
-    <h2 class="grey-heading">Trust built in<span class="blue-stop">.</span></h2>
-    <p class="paragraph-4">Customers and tradesmen can now transact with more trust. Tradesmen knowing the money is there, and customers knowing that money will only be released when work is done<span class="blue-stop">.</span></p>
-  </div>
-</div>
-<div class="social-section wf-section">
-  <div class="w-container">
-    <h2 class="grey-heading">Ready to start a job?</h2>
-    <p class="paragraph-4">Customer or a tradesman? Start a job payment below to transact with peace of mind<span class="blue-stop">.</span></p>
-  </div>
-  <div class="container-2 w-container">
-    <%= link_to new_job_payment_path, class: "button w-button" do %>
-      Start Job Payment
-    <% end %>
-    <a href="https://placer-it.sandbox.trustshare.co/", class="button green-button w-button"> Manage Payments</a>
-  </div>
-</div>
 
-<div id='new-job-content'></div>
+  <div style="opacity:0" class="load-first">
+    <div class="tile-section wf-section">
+      <div class="tile-section-inner">
+        <div class="large-text">Tradesmen, vetted by tradesmen.</div>
+        <div class="w-layout-grid grid-halves">
+          <div id="w-node-_0de6aa8e-95d6-3ea3-f622-e55ac96604cd-6cf0eeae" class="hero-contents-wrapper">
+            <div class="hero-contents">
+              <div class="section-title reduced-margin">
+                <h1 class="display-heading">Find a local tradesman.</h1>
+              </div>
+              <div class="form-block w-form">
+                <form id="wf-form-Hero-Sign-Up-Form" name="wf-form-Hero-Sign-Up-Form" data-name="Hero Sign Up Form" method="get" class="form-block"><select id="Category-2" name="Category" data-name="Category" class="form-input trade-category w-select">
+                    <option value="">Select Trade</option>
+                    <option value="First">First choice</option>
+                    <option value="Second">Second choice</option>
+                    <option value="Third">Third choice</option>
+                  </select><input type="text" class="form-input postcode w-input" maxlength="256" name="Postcode" data-name="Postcode" placeholder="Postcode" id="Postcode" required=""><input type="submit" value="Find Tradesmen" data-wait="Please wait..." class="button w-button"></form>
+                <div class="form-success w-form-done">
+                  <div>Thank you! Your submission has been received!</div>
+                </div>
+                <div class="form-error w-form-fail">
+                  <div>Oops! Something went wrong while submitting the form.</div>
+                </div>
+              </div>
+            </div>
+            <div class="review-footer">
+              <div><span class="text-bold">4.95/5</span> from reviews on</div><img src="images/Trustpilot.svg" alt="">
+            </div>
+          </div><img src="images/callum-hill-oamw52SCGi0-unsplash.jpg" loading="lazy" sizes="(max-width: 479px) 91vw, (max-width: 767px) 87vw, 83vw" srcset="images/callum-hill-oamw52SCGi0-unsplash-p-1080.jpeg 1080w, images/callum-hill-oamw52SCGi0-unsplash-p-1600.jpeg 1600w, images/callum-hill-oamw52SCGi0-unsplash-p-2000.jpeg 2000w, images/callum-hill-oamw52SCGi0-unsplash-p-2600.jpeg 2600w, images/callum-hill-oamw52SCGi0-unsplash-p-3200.jpeg 3200w, images/callum-hill-oamw52SCGi0-unsplash.jpg 6000w" alt="" class="square-image rounded-corners shadow">
+        </div>
+      </div>
+    </div>
+  </div>
+  <div style="opacity:0" class="load-second">
+    <div class="quotes-div">
+      <div class="scrolling-quotes">
+        <div class="avatar-with-author adjacent-to-avatar"><img src="images/avatar-03.jpg" alt="" class="avatar">
+          <div class="avatar-author">
+            <div class="small-text">“I am stunned, WOW!”</div>
+            <div class="muted-text small-text">Sally H.</div>
+          </div>
+        </div>
+        <div class="avatar-with-author adjacent-to-avatar"><img src="images/avatar-01.jpg" alt="" class="avatar">
+          <div class="avatar-author">
+            <div class="small-text">“Oh my gosh, thanks Tiles!”</div>
+            <div class="muted-text small-text">Ken P.</div>
+          </div>
+        </div>
+        <div class="avatar-with-author adjacent-to-avatar"><img src="images/avatar-04.jpg" alt="" class="avatar">
+          <div class="avatar-author">
+            <div class="small-text">“Great job on our extension!”</div>
+            <div class="muted-text small-text">Kim N.</div>
+          </div>
+        </div>
+        <div class="avatar-with-author adjacent-to-avatar"><img src="images/avatar-02.jpg" alt="" class="avatar">
+          <div class="avatar-author">
+            <div class="small-text">“Found me a great plumber!”</div>
+            <div class="muted-text small-text">Cameron S.</div>
+          </div>
+        </div>
+        <div class="avatar-with-author adjacent-to-avatar"><img src="images/avatar-03.jpg" alt="" class="avatar">
+          <div class="avatar-author">
+            <div class="small-text">“I am stunned, WOW!”</div>
+            <div class="muted-text small-text">Sally H.</div>
+          </div>
+        </div>
+        <div class="avatar-with-author adjacent-to-avatar"><img src="images/avatar-01.jpg" alt="" class="avatar">
+          <div class="avatar-author">
+            <div class="small-text">“Oh my gosh, thanks Tiles!”</div>
+            <div class="muted-text small-text">Ken P.</div>
+          </div>
+        </div>
+        <div class="avatar-with-author adjacent-to-avatar"><img src="images/avatar-04.jpg" alt="" class="avatar">
+          <div class="avatar-author">
+            <div class="small-text">“What a design, I love it!”</div>
+            <div class="muted-text small-text">Kim N.</div>
+          </div>
+        </div>
+        <div class="avatar-with-author adjacent-to-avatar"><img src="images/avatar-02.jpg" alt="" class="avatar">
+          <div class="avatar-author">
+            <div class="small-text">“Couldn’t live without it!”</div>
+            <div class="muted-text small-text">Cameron S.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="tile-section wf-section">
+      <div class="tile-section-inner bg-dark">
+        <div class="w-layout-grid grid-halves">
+          <div id="w-node-_3e5131c8-344e-b7e7-7af8-f6ae08d369bc-6cf0eeae" class="container">
+            <h5 class="subheading text-primary-1">Truepenny means trustworthy</h5>
+            <h3 class="large-heading">How it works.</h3>
+            <div class="large-text">We vet tradesmen in your area and connect you to them. </div>
+            <div class="button-row">
+              <a href="ui-snippets.html" class="button w-inline-block">
+                <div>Create Account</div>
+              </a>
+            </div>
+          </div>
+          <div class="square-box bg-match-text">
+            <div class="w-layout-grid icons-grid-vertical">
+              <div class="horizontal-icon-item"><img src="images/icon-light-switch-white.svg" alt="">
+                <div class="horizontal-icon-text">Select what type tradesmen you are looking for and near what postcode. For example a Plumber near SE10 9AN.</div>
+              </div>
+              <div class="horizontal-icon-item"><img src="images/icon-calendar-4-white.svg" alt="">
+                <div class="horizontal-icon-text">We will find the top 3 tradesmen for that category in your area. For example the top 3 Plumbers near SE10 9AN.</div>
+              </div>
+              <div class="horizontal-icon-item"><img src="images/icon-lifebuoy-white.svg" alt="">
+                <div class="horizontal-icon-text">Your selected tradesmen will reach out to discuss the job and arrange a quote, you choose who to gets the job.</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="section title-section review-home-page wf-section">
+      <div class="container-large">
+        <h5 class="subheading text-primary-1">Tradesmen feedback</h5>
+        <h2 class="large-heading no-bottom-margin">What customers say about our vetted tradesmen.</h2>
+      </div>
+    </div>
+    <div class="tile-section wf-section">
+      <div class="tile-section-inner">
+        <div class="w-layout-grid reviews-grid">
+          <div class="review-box">
+            <div class="stars"><img src="images/icon-star.svg" alt=""><img src="images/icon-star.svg" alt=""><img src="images/icon-star.svg" alt=""><img src="images/icon-star.svg" alt=""><img src="images/icon-star.svg" alt=""></div>
+            <p class="large-text review-text">“Without Tiles we would still be managing things the bad old way: wasting time, missing deadlines and finger-pointing. No more! Tiles has saved our business. 💰”</p>
+            <div class="avatar-with-author"><img src="images/avatar-01.jpg" alt="" class="avatar">
+              <div class="avatar-author">
+                <div class="small-text">Kenneth B.</div>
+                <div class="muted-text small-text">Founder @ Company</div>
+              </div>
+            </div>
+            <div class="bordered-addendum dark-border">
+              <h3 class="metric-addendum-heading">53%</h3>
+              <div class="small-text">Increase in revenue</div>
+            </div>
+          </div>
+          <div class="review-box">
+            <div class="stars"><img src="images/icon-star.svg" alt=""><img src="images/icon-star.svg" alt=""><img src="images/icon-star.svg" alt=""><img src="images/icon-star.svg" alt=""><img src="images/icon-star.svg" alt=""></div>
+            <p class="large-text review-text">“At first we were using templates solely to mock up designs for clients, but the design of Tiles was so strong that the client demanded we keep it. Who were we to argue?”</p>
+            <div class="avatar-with-author"><img src="images/avatar-02.jpg" alt="" class="avatar">
+              <div class="avatar-author">
+                <div class="small-text">Cameron Schulz</div>
+                <div class="muted-text small-text">Product Designer</div>
+              </div>
+            </div>
+            <div class="bordered-addendum dark-border">
+              <h3 class="metric-addendum-heading">2.5x</h3>
+              <div class="small-text">Increase in engagement</div>
+            </div>
+          </div>
+          <div class="review-box">
+            <div class="stars"><img src="images/icon-star.svg" alt=""><img src="images/icon-star.svg" alt=""><img src="images/icon-star.svg" alt=""><img src="images/icon-star.svg" alt=""><img src="images/icon-star.svg" alt=""></div>
+            <p class="large-text review-text">“I won’t mince words, Tiles is 100% legit. Our workflow has been supercharged by the plethora of design options and the attnetion to detail is seriously next-level. GET INTO IT.”</p>
+            <div class="avatar-with-author"><img src="images/avatar-03.jpg" alt="" class="avatar">
+              <div class="avatar-author">
+                <div class="small-text">Sally Z.</div>
+                <div class="muted-text small-text">Customer Success Manager</div>
+              </div>
+            </div>
+            <div class="bordered-addendum dark-border">
+              <h3 class="metric-addendum-heading">132</h3>
+              <div class="small-text">New signups on day one</div>
+            </div>
+          </div>
+          <div class="review-box">
+            <div class="stars"><img src="images/icon-star.svg" alt=""><img src="images/icon-star.svg" alt=""><img src="images/icon-star.svg" alt=""><img src="images/icon-star.svg" alt=""><img src="images/icon-star.svg" alt=""></div>
+            <p class="large-text review-text">“It’s a fantastic product with tons of excellent features 🚀. This product has transformed the way we do business.”</p>
+            <div class="avatar-with-author"><img src="images/avatar-04.jpg" alt="" class="avatar">
+              <div class="avatar-author">
+                <div class="small-text">Kim N.</div>
+                <div class="muted-text small-text">Product Designer</div>
+              </div>
+            </div>
+            <div class="bordered-addendum dark-border">
+              <h3 class="metric-addendum-heading">80%</h3>
+              <div class="small-text">Drop in bounce rate</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="tile-section wide-group wf-section">
+      <div class="tile-section-inner wide-group-item grid-halves">
+        <div class="horizontal-icon-item">
+          <div class="square-icon bg-primary-4"><img src="images/icon-website-font-size-white.svg" alt=""></div>
+          <div class="horizontal-icon-text">Use Tiles’ eye-catching array of interface modules to build the perfect layout for your product. There are over 30 to choose from.</div>
+        </div>
+        <div class="horizontal-icon-item">
+          <div class="square-icon bg-primary-2"><img src="images/icon-promotion-window-white.svg" alt=""></div>
+          <div class="horizontal-icon-text">Tiles makes building a stylish website easy for everyone – SaaS Platforms, Technology Startups and more.</div>
+        </div>
+      </div>
+    </div>
+    <div class="w-dyn-list">
+      <div role="list" class="w-dyn-items">
+        <div role="listitem" class="w-dyn-item">
+          <div class="tile-section wf-section">
+            <div class="tile-section-inner">
+              <div class="w-layout-grid grid-halves">
+                <a href="#" class="image-wrapper w-inline-block"><img src="" alt="" class="rounded-corners">
+                  <div class="customer-logo-wrapper"><img src="" alt="" class="customer-logo"></div>
+                </a>
+                <div class="container">
+                  <h2>Meet Jack, one of our tradesmen.</h2>
+                  <div>&quot;I love working with Truepenny, it makes it easy to connect with customers and I always commit to doing my best work for them.&quot;<br>‍</div>
+                  <div class="fine-print-text text-muted">Jack Cunningham - Exceptional Electrics Ltd</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="empty-state w-dyn-empty">
+        <div>There are no published case studies.</div>
+      </div>
+    </div>
+    <div class="section wf-section">
+      <div class="container-large">
+        <div class="container-large reduced-width align-left">
+          <h2 class="section-title"><span class="text-primary-1">Heard enough?</span> Find the best local tradesmen below.</h2>
+        </div>
+        <div id="Subscribe-Form-1" class="w-form">
+          <form id="wf-form-Subscribe-Form-1" name="wf-form-Subscribe-Form-1" data-name="Subscribe Form 1" method="get" class="form-horizontal"><select id="Category-3" name="Category-3" data-name="Category 3" class="form-input inline w-select">
+              <option value="">Trade Category</option>
+              <option value="First">First choice</option>
+              <option value="Second">Second choice</option>
+              <option value="Third">Third choice</option>
+            </select><input type="text" class="form-input inline w-input" maxlength="256" name="Postcode-2" data-name="Postcode 2" placeholder="Postcode" id="Postcode-2" required=""><input type="submit" value="Find Tradesmen" data-wait="Please wait..." class="button inline w-button"></form>
+          <div class="form-success w-form-done">
+            <div>Thank you! Your submission has been received!</div>
+          </div>
+          <div class="form-error w-form-fail">
+            <div>Oops! Something went wrong while submitting the form.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
 
