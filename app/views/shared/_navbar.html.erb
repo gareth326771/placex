@@ -4,11 +4,13 @@
     <%= link_to back_masquerade_path(current_user) do %><%= icon("fas", "times") %> Logout <% end %>
   </div>
 <% end %>
-
+<!-- <div id="Top" class="back-to-top-container">
+  <a href="#Top" class="back-to-top-button w-inline-block"><img src="images/icon-dropdown-arrow-small-dark.svg" alt="" class="back-to-top-icon"></a>
+</div> -->
 <nav class="navbar navbar-expand-md navbar-light">
   <div class="container mx-auto">
     <%= link_to root_path, class: "navbar-brand" do %>
-      <a href="/" aria-current="page" class="w-inline-block w--current"><img src="https://res.cloudinary.com/dqis0vswg/image/upload/v1638313199/PTT_NAV-removebg-preview.png" loading="lazy" width="100" sizes="100px" srcset="https://res.cloudinary.com/dqis0vswg/image/upload/v1638313199/PTT_NAV-removebg-preview.png" alt=""></a>
+      <a href="/" aria-current="page" class="w-inline-block w--current"><img src="https://res.cloudinary.com/dqis0vswg/image/upload/v1646141320/Truepenny_Trades_1.png" loading="lazy" width="170" srcset="https://res.cloudinary.com/dqis0vswg/image/upload/v1646141320/Truepenny_Trades_1.png" alt=""></a>
     <% end %>
 
 
@@ -46,19 +48,16 @@
           </li>
 
         <% else %>
-          <li class="nav-item"><%= link_to "Customers", customers_path, class: "nav-link nav-link-underline" %></li>
-          <li class="nav-item"><%= link_to "Tradesmen", tradesmen_path, class: "nav-link nav-link-underline" %></li>
-          <li class="nav-item"><%= link_to "FAQ", faq_path, class: "nav-link nav-link-underline" %></li>
+<!--           <li class="nav-item"><%#= link_to "Customers", customers_path, class: "nav-link nav-link-underline" %></li> -->
           <li class="nav-item">
             <%= link_to new_job_payment_path, class: "nav-link nav-link-underline" do %>
-              <i class="fas fa-hand-point-right blue-stop"></i> Start Payment
+              <i class="fas fa-hand-point-right blue-stop"></i> Tradesmen Sign Up
             <% end %>
           </li>
-
-          <li class="nav-item"> <a href="https://paythetrade.trustshare.co/", class="nav-link nav-link-underline"> Manage Payments</a></li>
          <!--  <li class="nav-item"><%#= link_to "Login", new_user_session_path, class: "nav-link nav-link-underline" %></li> -->
         <% end %>
       </ul>
     </div>
   </div>
 </nav>
+

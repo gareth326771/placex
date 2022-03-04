@@ -1947,6 +1947,7 @@ body {
 }
 
 h1 {
+  font-family: Outfit, sans-serif;
   margin-top: 0px;
   margin-bottom: 21px;
   font-size: 70px;
@@ -7084,24 +7085,27 @@ figcaption {
   }
 }
 
-@font-face {
-  font-family: 'Outfit';
-  src: url('../fonts/Outfit-Regular.woff2') format('woff2');
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: 'Outfit';
-  src: url('../fonts/Outfit-SemiBold.woff2') format('woff2');
-  font-weight: 600;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: 'Outfit';
-  src: url('../fonts/Outfit-Medium.woff2') format('woff2');
-  font-weight: 500;
-  font-style: normal;
-  font-display: swap;
-}
+// @font-face {
+//   font-family: 'Outfit';
+//   src: url('/fonts/Outfit-Regular.woff2') format('woff2');
+//   font-weight: 400;
+//   font-style: normal;
+//   font-display: swap;
+// }
+// @font-face {
+//   font-family: 'Outfit';
+//   src: url('/fonts/Outfit-SemiBold.woff2') format('woff2');
+//   font-weight: 600;
+//   font-style: normal;
+//   font-display: swap;
+// }
+// @font-face {
+//   font-family: 'Outfit';
+//   src: url('/fonts/Outfit-Medium.woff2') format('woff2');
+//   font-weight: 500;
+//   font-style: normal;
+//   font-display: swap;
+// }
+
+
+
