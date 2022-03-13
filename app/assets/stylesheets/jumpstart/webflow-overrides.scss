@@ -7,7 +7,7 @@
 // make reviews scroll
 
 * { box-sizing: border-box; }
-    $duration: 30s;
+    $duration: 40s;
 
 
 @-webkit-keyframes ticker {
@@ -149,3 +149,17 @@
   }
 }
 }
+
+.button {
+  text-decoration: none;
+}
+
+.button:hover {
+  text-decoration: none !important;
+  color: white;
+}
+
+#footer-logo-image{
+  max-width: 300px;
+}
+
