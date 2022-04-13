@@ -1,10 +1,21 @@
 // ADD GOOGLE FONT FOR OUTFIT
 
-@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600&display=swap');
+// @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600&display=swap');
 
 // overflow for scrolling reviews
 
 // make reviews scroll
+
+ h1 {
+  font-family: "Thicccboi" ;
+    margin-top: 0px;
+    margin-bottom: 14px;
+    color: #222223;
+    font-size: 48px;
+    line-height: 1.25em;
+    font-weight: 700;
+}
+
 
 * { box-sizing: border-box; }
     $duration: 40s;
