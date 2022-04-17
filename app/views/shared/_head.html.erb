@@ -1,49 +1,84 @@
-<title><%= Rails.configuration.application_name %></title>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  
+  <!-- Returns meta tags “csrf-param” and “csrf-token” with the name of the cross-site request forgery protection parameter and token, respectively. -->
+  <%= csrf_meta_tags %>
+  <%= csp_meta_tag %>
 
-<%= csrf_meta_tags %>
-<%= csp_meta_tag %>
+  <!-- App title taken from config/application.rb/[module name] -->
+  <title><%= Rails.configuration.application_name %></title>
+  
+  
 
-<%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-<%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+  <!-- Share Card meta data -->
+  <meta content="Realtor X is our top-notch real estate Webflow Template &amp; UI Kit designed for modern real estate companies looking to have an amazing website up and running as easy as 1, 2, 3." name="description">
+  <meta content="PlaceX Workplace" property="og:title">
+  <meta content="Realtor X is our top-notch real estate Webflow Template &amp; UI Kit designed for modern real estate companies looking to have an amazing website up and running as easy as 1, 2, 3." property="og:description">
+  <meta content="https://uploads-ssl.webflow.com/6193ce0889184dacb7d96c80/619feb1dd8fb8abf32ea7847_featured-image-realtor-template.png" property="og:image">
+  <meta content="PlaceX Workplace" property="twitter:title">
+  <meta content="Realtor X is our top-notch real estate Webflow Template &amp; UI Kit designed for modern real estate companies looking to have an amazing website up and running as easy as 1, 2, 3." property="twitter:description">
+  <meta content="https://uploads-ssl.webflow.com/6193ce0889184dacb7d96c80/619feb1dd8fb8abf32ea7847_featured-image-realtor-template.png" property="twitter:image">
+  <meta property="og:type" content="website">
+  <meta content="summary_large_image" name="twitter:card">
+  <meta content="width=device-width, initial-scale=1" name="viewport">
+  <meta content="Webflow" name="generator">
 
+  <!-- Bootstrap -->
+  <!-- load Bootstrap CSS before Webflow, application CSS -->
+  <!-- Bootstrap commented because it is interfering with webflow CSS-->
+  <!--
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+  -->
 
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<!-- <script async src="https://www.googletagmanager.com/gtag/js?id=G-34E10J6BK5"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+  <!-- Sweetalert -->  
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@8"></script>
 
-  gtag('config', 'G-34E10J6BK5');
-</script> -->
+  <!-- Rails application CSS (including Webflow CSS file(s)) -->
+  <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+  <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+  
+  <!-- Original Webflow hosted CSS all in one file -->
+  <!-- <link href="https://uploads-ssl.webflow.com/625417fd90f908c4cee499a6/css/placex.webflow.98e5dbb0c.css" rel="stylesheet" type="text/css"> -->
+  <!-- Webflow separated CSS files -->
+  <!-- 
+  <link href="css/normalize.css" rel="stylesheet" type="text/css">
+  <link href="css/webflow.css" rel="stylesheet" type="text/css">
+  <link href="css/pay-the-trades.webflow.css" rel="stylesheet" type="text/css"> 
+  -->
+  
 
+  <!-- Google webfont, fontawesome
+  <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js" type="text/javascript"></script>
+  <script src="https://kit.fontawesome.com/0083b5e774.js" crossorigin="anonymous"></script>
+  -->
 
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
-<!-- replace "demo" with your verified subdomain -->
-<script src="https://cdn.jsdelivr.net/npm/sweetalert2@8"></script>
+  <!-- Favicon -->
+  <%= favicon_link_tag('https://res.cloudinary.com/dqis0vswg/image/upload/v1638313199/PTT_NAV-removebg-preview.png') %>
 
-<%= favicon_link_tag('https://res.cloudinary.com/dqis0vswg/image/upload/v1638313199/PTT_NAV-removebg-preview.png') %>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=G-34E10J6BK5"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
 
-<title>Truepenny Tradesmen</title>
-<!-- <link href="css/normalize.css" rel="stylesheet" type="text/css">
-<link href="css/webflow.css" rel="stylesheet" type="text/css">
-<link href="css/pay-the-trades.webflow.css" rel="stylesheet" type="text/css"> -->
-<script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js" type="text/javascript"></script>
-<script src="https://kit.fontawesome.com/0083b5e774.js" crossorigin="anonymous"></script>
-<!--Start of Tawk.to Script-->
-<!-- <script type="text/javascript">
-var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
-(function(){
-var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
-s1.async=true;
-s1.src='https://embed.tawk.to/61bfa11480b2296cfdd273d2/1fna8qe54';
-s1.charset='UTF-8';
-s1.setAttribute('crossorigin','*');
-s0.parentNode.insertBefore(s1,s0);
-})();
-</script> -->
-<!--End of Tawk.to Script-->
+    gtag('config', 'G-34E10J6BK5');
+  </script> -->
+
+  <!--Start of Tawk.to Script-->
+  <!-- <script type="text/javascript">
+  var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+  (function(){
+  var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+  s1.async=true;
+  s1.src='https://embed.tawk.to/61bfa11480b2296cfdd273d2/1fna8qe54';
+  s1.charset='UTF-8';
+  s1.setAttribute('crossorigin','*');
+  s0.parentNode.insertBefore(s1,s0);
+  })();
+  </script> -->
+  <!--End of Tawk.to Script-->
+</head>
