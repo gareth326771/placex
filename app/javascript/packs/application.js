@@ -11,9 +11,9 @@ require("local-time").start()
 
 window.Rails = Rails
 
-// window.bootstrap = require('bootstrap/dist/js/bootstrap.bundle.js');
+window.bootstrap = require('bootstrap/dist/js/bootstrap.bundle.js');
 
-// import 'bootstrap'
+import 'bootstrap'
 import 'data-confirm-modal'
 
 window.jQuery = $;
