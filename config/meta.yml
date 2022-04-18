@@ -1,0 +1,6 @@
+# Sitewide meta tag data for Facebook, Twitter share cards
+meta_product_name: "PlaceX"
+meta_title: "PlaceX - Employee Spaces"
+meta_description: "Enable your employees to work from anywhere."
+meta_image: "placexogimage.jpg" # should exist in `app/assets/images/`
+twitter_account: "@product_twitter_account"   # required for Twitter Cards

@@ -6,21 +6,27 @@
   <%= csrf_meta_tags %>
   <%= csp_meta_tag %>
 
-  <!-- App title taken from config/application.rb/[module name] -->
-  <title><%= Rails.configuration.application_name %></title>
+  <!-- App title shown in browser tabs taken from config/meta.yml -->
+  <title><%= meta_title %></title>
   
   <!-- Share Card meta data -->
-  <meta content="Realtor X is our top-notch real estate Webflow Template &amp; UI Kit designed for modern real estate companies looking to have an amazing website up and running as easy as 1, 2, 3." name="description">
-  <meta content="PlaceX Workplace" property="og:title">
-  <meta content="Realtor X is our top-notch real estate Webflow Template &amp; UI Kit designed for modern real estate companies looking to have an amazing website up and running as easy as 1, 2, 3." property="og:description">
-  <meta content="https://uploads-ssl.webflow.com/6193ce0889184dacb7d96c80/619feb1dd8fb8abf32ea7847_featured-image-realtor-template.png" property="og:image">
-  <meta content="PlaceX Workplace" property="twitter:title">
-  <meta content="Realtor X is our top-notch real estate Webflow Template &amp; UI Kit designed for modern real estate companies looking to have an amazing website up and running as easy as 1, 2, 3." property="twitter:description">
-  <meta content="https://uploads-ssl.webflow.com/6193ce0889184dacb7d96c80/619feb1dd8fb8abf32ea7847_featured-image-realtor-template.png" property="twitter:image">
-  <meta property="og:type" content="website">
-  <meta content="summary_large_image" name="twitter:card">
-  <meta content="width=device-width, initial-scale=1" name="viewport">
-  <meta content="Webflow" name="generator">
+  <meta name="description" content="<%= meta_description %>">
+
+  <!-- Facebook Open Graph data -->
+  <meta property="og:title" content="<%= meta_title %>" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="<%= request.original_url %>" />
+  <meta property="og:image" content="<%= meta_image %>" />
+  <meta property="og:description" content="<%= meta_description %>" />
+  <meta property="og:site_name" content="<%= meta_title %>" />
+
+  <!-- Twitter Card data -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="<%= DEFAULT_META["twitter_account"] %>">
+  <meta name="twitter:title" content="<%= meta_title %>">
+  <meta name="twitter:description" content="<%= meta_description %>">
+  <meta name="twitter:creator" content="<%= DEFAULT_META["twitter_account"] %>">
+  <meta name="twitter:image:src" content="<%= meta_image %>">
 
   <!-- Bootstrap -->
   <!-- load Bootstrap CSS before Webflow, application CSS -->
