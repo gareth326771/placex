@@ -1,24 +1,16 @@
-# README
+# PlaceX
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+### Versions
+Ruby: 2.6.1p33 (2019-01-30 revision 66950) [x86_64-linux]
+Rails: Rails 6.0.3.4
 
-Things you may want to cover:
+### Database setup on a development machine
+Currenty using PostgreSQL
+`rails db:create`, `rails db:migrate`
 
-* Ruby version
+### Sitewide Meta data
+Sitewide Meta Data for sharing tags held in `config/meta.yml`
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+### Template from Webflow
+Webflow CSS is in `app/assets.stylesheets/webflow/webflow.scss`
+Webflow JS is in `public/javascripts/jquery-3.5.1.min.js` (minified jquery), `public/javascripts/webflow.7726e929c.js` (webflow template JS)
