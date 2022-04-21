@@ -8,42 +8,37 @@
             </div>
             <p class="margin-bottom-32px">Workation as a benefit.</p>
             <div class="flex children-wrap social-media-spacing-16px">
-            <div class="social-media-link-wrapper spacing-16px">
-                <a href="https://www.facebook.com/" target="_blank" class="social-media-link"></a>
-            </div>
-            <div class="social-media-link-wrapper spacing-16px">
-                <a href="https://twitter.com/" target="_blank" class="social-media-link icon-size-14px"></a>
-            </div>
-            <div class="social-media-link-wrapper spacing-16px">
-                <a href="https://www.instagram.com/" target="_blank" class="social-media-link"></a>
-            </div>
-            <div class="social-media-link-wrapper spacing-16px">
-                <a href="https://www.linkedin.com/" target="_blank" class="social-media-link icon-size-14px"></a>
-            </div>
-            <div class="social-media-link-wrapper spacing-16px">
-                <a href="https://www.youtube.com/" target="_blank" class="social-media-link icon-size-13px"></a>
-            </div>
-            <div class="social-media-link-wrapper spacing-16px">
-                <a href="https://www.whatsapp.com/" target="_blank" class="social-media-link icon-size-17px"></a>
-            </div>
+  <!--             <div class="social-media-link-wrapper spacing-16px">
+                  <a href="https://www.facebook.com/" target="_blank" class="social-media-link"></a>
+              </div>
+              <div class="social-media-link-wrapper spacing-16px">
+                  <a href="https://twitter.com/" target="_blank" class="social-media-link icon-size-14px"></a>
+              </div> -->
+              <div class="social-media-link-wrapper spacing-16px">
+                  <a href="https://www.instagram.com/" target="_blank" class="social-media-link"></a>
+              </div>
+             <!--  <div class="social-media-link-wrapper spacing-16px">
+                  <a href="https://www.linkedin.com/" target="_blank" class="social-media-link icon-size-14px"></a>
+              </div>
+              <div class="social-media-link-wrapper spacing-16px">
+                  <a href="https://www.youtube.com/" target="_blank" class="social-media-link icon-size-13px"></a>
+              </div>
+              <div class="social-media-link-wrapper spacing-16px">
+                  <a href="https://www.whatsapp.com/" target="_blank" class="social-media-link icon-size-17px"></a>
+            </div> -->
             </div>
         </div>
         <div class="split-content footer-content-top-right">
-            <div class="h4-size margin-bottom-22px">Subscribe to our newsletter</div>
+          <div class="h4-size margin-bottom-22px">Subscribe to our newsletter</div>
             <div class="split-newsletter-form-block w-form">
-            <form id="split-newsletter-form" name="wf-form-Split-Newsletter-Form" data-name="Split Newsletter Form" method="get" class="split-newsletter-form">
-                <div class="margin-bottom-12px"><input type="email" class="input add-icon newsletter-icon w-input" maxlength="256" name="email" data-name="Email" placeholder="Enter your email address" id="email" required=""></div><input type="submit" value="Subscribe" data-wait="Please wait..." class="button-primary bg-primary-1 w-button">
-            </form>
-            <div class="success-message w-form-done">
-                <div class="flex center mobile-vertical-direction"><img src="https://uploads-ssl.webflow.com/625417fd90f908c4cee499a6/625417fe90f9083992e499fa_icon-success-message-realtor-template.svg" loading="eager" alt="Success Icon - Realtor X Webflow Template" class="image success-message-icon">
-                <div class="success-message-text">Thanks for joining our newsletter.</div>
+              <%= form_for EmailSubscribe.new, data: { name: "Split Newsletter Form" }, html: {class: "split-newsletter-form", id: "split-newsletter-form", name: "wf-form-Split-Newsletter-Form"} do |f| %>
+                <div class="margin-bottom-12px">
+                  <%= f.email_field :email, class: 'input add-icon email-icon w-input', placeholder: "Email", data_name: "Email", id: "email", :required => true %>
                 </div>
+                  <%= f.submit "Subscribe", class: "button-primary bg-primary-1 w-button" %>
+              <% end %>
             </div>
-            <div class="error-message w-form-fail">
-                <div>Oops! Something went wrong.</div>
-            </div>
-            </div>
-        </div>
+          </div>
         </div>
 
     </div>
