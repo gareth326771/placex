@@ -8,6 +8,8 @@ Rails.application.routes.draw do
     end
 
 
+  resources :client_enquiries
+  resources :email_subscribes
   resources :notifications, only: [:index]
   resources :announcements, only: [:index]
   devise_for :users, controllers: { omniauth_callbacks: "users/omniauth_callbacks" }
