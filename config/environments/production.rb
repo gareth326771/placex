@@ -1,6 +1,6 @@
 Rails.application.configure do
   # Settings specified here will take precedence over those in config/application.rb.
-  Rails.application.routes.default_url_options[:host] = "https://www.paythetrade.co.uk"
+  Rails.application.routes.default_url_options[:host] = "https://www.place-x.io"
   # Code is not reloaded between requests.
   config.cache_classes = true
 
@@ -58,7 +58,7 @@ Rails.application.configure do
 
   # Use a real queuing backend for Active Job (and separate queues per environment).
   # config.active_job.queue_adapter     = :resque
-  # config.active_job.queue_name_prefix = "placer_production"
+  # config.active_job.queue_name_prefix = "PlaceX_production"
 
   config.action_mailer.perform_caching = false
 

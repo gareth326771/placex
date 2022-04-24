@@ -41383,15 +41383,15 @@ if ($stringify) {
 
   $({ target: 'JSON', stat: true, forced: FORCED_JSON_STRINGIFY }, {
     // eslint-disable-next-line no-unused-vars -- required for `.length`
-    stringify: function stringify(it, replacer, space) {
+    stringify: function stringify(it, rePlaceX, space) {
       var args = arraySlice(arguments);
-      var $replacer = replacer;
-      if (!isObject(replacer) && it === undefined || isSymbol(it)) return; // IE8 returns string on undefined
-      if (!isArray(replacer)) replacer = function (key, value) {
-        if (isCallable($replacer)) value = call($replacer, this, key, value);
+      var $rePlaceX = rePlaceX;
+      if (!isObject(rePlaceX) && it === undefined || isSymbol(it)) return; // IE8 returns string on undefined
+      if (!isArray(rePlaceX)) rePlaceX = function (key, value) {
+        if (isCallable($rePlaceX)) value = call($rePlaceX, this, key, value);
         if (!isSymbol(value)) return value;
       };
-      args[1] = replacer;
+      args[1] = rePlaceX;
       return apply($stringify, null, args);
     }
   });
