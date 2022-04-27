@@ -9,6 +9,7 @@ Rails.application.routes.draw do
 
 
   resources :client_enquiries
+  resources :worker_enquiries
   resources :email_subscribes
   resources :notifications, only: [:index]
   resources :announcements, only: [:index]
@@ -18,6 +19,7 @@ Rails.application.routes.draw do
   get '/customers', to: 'home#customers', as: :customers
   get '/tradesmen', to: 'home#tradesmen', as: :tradesmen
   get '/faq', to: 'home#faq', as: :faq
+  get '/workationers', to: 'home#workationers', as: :workationers
 
   get '/s/:slug', to: 'links#show', as: :short
   resources :job_payments

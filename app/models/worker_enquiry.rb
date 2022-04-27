@@ -1,0 +1,2 @@
+class WorkerEnquiry < ApplicationRecord
+end

@@ -34,3 +34,9 @@
 #contact-form-card {
   min-height: 300px;
 }
+
+@media only screen and (min-width: 600px) {
+  #email-card {
+    min-width: 385px;
+  }
+}
