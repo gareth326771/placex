@@ -2,5 +2,5 @@
 meta_product_name: "PlaceX"
 meta_title: "PlaceX: Office Anywhere"
 meta_description: "The Airbnb of workations, PlaceX turns vaction homes into offices."
-meta_image: "placexogimage2.jpg" # should exist in `app/assets/images/`
+meta_image: "placexogimage.jpg" # should exist in `app/assets/images/`
 twitter_account: "@product_twitter_account"   # required for Twitter Cards
