@@ -40,3 +40,12 @@
     min-width: 385px;
   }
 }
+
+@media only screen and (max-width: 600px) {
+  #wl-button {
+    margin-top: 20px;
+  }
+  #arrow-image {
+    max-width: 220px;
+  }
+}

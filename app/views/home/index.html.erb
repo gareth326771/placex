@@ -8,7 +8,7 @@
         <div class="split-content button-row-first">
           <!-- Ammended link -->
           <a href="#how-it-works" class="button-primary w-button">Find out more</a>
-          <a href="#contact-section" class="button-primary w-button">Join the waitlist</a>
+          <a href="#contact-section" class="button-primary w-button" id="wl-button">Join the waitlist</a>
         </div>
       </div>
     </div>
@@ -256,7 +256,7 @@
           </div>
         </div>
         <div data-w-id="3d4cd5f3-d29b-fbd3-d08f-6160f8330fcf" style="-webkit-transform:translate3d(0, 60px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 60px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 60px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 60px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);opacity:0" class="split-content contact-section-right">
-          <img src="https://res.cloudinary.com/dqis0vswg/image/upload/v1651089219/Arrow.png" loading="eager" alt="Email Icon - Realtor X Webflow Template">
+          <img src="https://res.cloudinary.com/dqis0vswg/image/upload/v1651089219/Arrow.png" loading="eager" alt="Email Icon - Realtor X Webflow Template" id="arrow-image">
           <div class="card card-contact-section-form" id="contact-form-card">
             <div class="contact-section-form-block w-form">
               <%= form_for ClientEnquiry.new, data: { name: "Contact Section Form" }, html: {class: "contact-section-form", id: "contact-section-form", name: "wf-form-Contact-Section-Form"} do |f| %>
