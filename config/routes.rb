@@ -19,7 +19,7 @@ Rails.application.routes.draw do
   get '/customers', to: 'home#customers', as: :customers
   get '/tradesmen', to: 'home#tradesmen', as: :tradesmen
   get '/faq', to: 'home#faq', as: :faq
-  get '/workationers', to: 'home#workationers', as: :workationers
+  get '/employers', to: 'home#employers', as: :employers
 
   get '/s/:slug', to: 'links#show', as: :short
   resources :job_payments

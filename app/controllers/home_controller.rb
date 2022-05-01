@@ -2,7 +2,7 @@ class HomeController < ApplicationController
   def index
   end
 
-  def workationers
+  def employers
   end
 
   def terms
