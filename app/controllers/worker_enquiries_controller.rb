@@ -12,8 +12,8 @@ class WorkerEnquiriesController < ApplicationController
       redirect_to workationers_path
     else
       # NotificationMailer.advertiser_enquiry_notification.deliver_later
-      flash[:notice] = "Thank you, we will be in touch with updates!"
-      redirect_to workationers_path
+      flash[:notice] = "Thank you, we will be in touch with updates."
+      redirect_to root_path
   end
 
   private

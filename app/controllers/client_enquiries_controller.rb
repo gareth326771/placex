@@ -13,7 +13,7 @@ class ClientEnquiriesController < ApplicationController
     else
       # NotificationMailer.advertiser_enquiry_notification.deliver_later
       flash[:notice] = "Thank you, one of the team will be be in touch."
-      redirect_to root_path
+      redirect_to employers_path
   end
 
   private
