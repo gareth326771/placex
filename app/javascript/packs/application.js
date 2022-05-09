@@ -9,6 +9,7 @@ require("@rails/activestorage").start()
 require("channels")
 require("local-time").start()
 
+
 window.Rails = Rails
 
 window.bootstrap = require('bootstrap/dist/js/bootstrap.bundle.js');
