@@ -21435,7 +21435,7 @@
           }
       
           var f = {
-            duration: 500,
+            duration: 50,
             ease: "ease",
             delay: 0
           };
@@ -77191,12 +77191,12 @@
                             {
                                 id: "a-21-n",
                                 actionTypeId: "TRANSFORM_MOVE",
-                                config: { delay: 0, easing: "", duration: 500, target: { useEventTarget: true, id: "625417fe90f9085a68e499a9|de62e598-5337-c0cb-3178-cb20599fd601" }, yValue: 60, xUnit: "PX", yUnit: "px", zUnit: "PX" },
+                                config: { delay: 0, easing: "", duration: 0, target: { useEventTarget: true, id: "625417fe90f9085a68e499a9|de62e598-5337-c0cb-3178-cb20599fd601" }, yValue: 60, xUnit: "PX", yUnit: "px", zUnit: "PX" },
                             },
                             {
                                 id: "a-21-n-2",
                                 actionTypeId: "STYLE_OPACITY",
-                                config: { delay: 0, easing: "", duration: 500, target: { useEventTarget: true, id: "625417fe90f9085a68e499a9|de62e598-5337-c0cb-3178-cb20599fd601" }, value: 0, unit: "" },
+                                config: { delay: 0, easing: "", duration: 0, target: { useEventTarget: true, id: "625417fe90f9085a68e499a9|de62e598-5337-c0cb-3178-cb20599fd601" }, value: 0, unit: "" },
                             },
                         ],
                     },
@@ -77205,12 +77205,12 @@
                             {
                                 id: "a-21-n-3",
                                 actionTypeId: "STYLE_OPACITY",
-                                config: { delay: 1000, easing: "easeInOut", duration: 500, target: { useEventTarget: true, id: "625417fe90f9085a68e499a9|de62e598-5337-c0cb-3178-cb20599fd601" }, value: 1, unit: "" },
+                                config: { delay: 1000, easing: "easeInOut", duration: 0, target: { useEventTarget: true, id: "625417fe90f9085a68e499a9|de62e598-5337-c0cb-3178-cb20599fd601" }, value: 1, unit: "" },
                             },
                             {
                                 id: "a-21-n-4",
                                 actionTypeId: "TRANSFORM_MOVE",
-                                config: { delay: 1000, easing: "outExpo", duration: 500, target: { useEventTarget: true, id: "625417fe90f9085a68e499a9|de62e598-5337-c0cb-3178-cb20599fd601" }, yValue: 0, xUnit: "PX", yUnit: "px", zUnit: "PX" },
+                                config: { delay: 1000, easing: "outExpo", duration: 0, target: { useEventTarget: true, id: "625417fe90f9085a68e499a9|de62e598-5337-c0cb-3178-cb20599fd601" }, yValue: 0, xUnit: "PX", yUnit: "px", zUnit: "PX" },
                             },
                         ],
                     },
@@ -77235,7 +77235,7 @@
                                 config: {
                                     delay: 0,
                                     easing: "",
-                                    duration: 500,
+                                    duration: 0,
                                     target: { useEventTarget: "CHILDREN", selector: ".header-dropdown-list", selectorGuids: ["56a2e5a6-a01a-0f29-9ce4-426b5b5a7903"] },
                                     yValue: 10,
                                     xUnit: "PX",
@@ -77246,7 +77246,7 @@
                             {
                                 id: "a-4-n-3",
                                 actionTypeId: "STYLE_OPACITY",
-                                config: { delay: 0, easing: "", duration: 500, target: { useEventTarget: "CHILDREN", selector: ".header-dropdown-list", selectorGuids: ["56a2e5a6-a01a-0f29-9ce4-426b5b5a7903"] }, value: 0, unit: "" },
+                                config: { delay: 0, easing: "", duration: 0, target: { useEventTarget: "CHILDREN", selector: ".header-dropdown-list", selectorGuids: ["56a2e5a6-a01a-0f29-9ce4-426b5b5a7903"] }, value: 0, unit: "" },
                             },
                             {
                                 id: "a-4-n-4",
@@ -77254,7 +77254,7 @@
                                 config: {
                                     delay: 0,
                                     easing: "",
-                                    duration: 500,
+                                    duration: 0,
                                     target: { useEventTarget: "CHILDREN", selector: ".header-dropdown-list", selectorGuids: ["56a2e5a6-a01a-0f29-9ce4-426b5b5a7903"] },
                                     heightValue: 0,
                                     widthUnit: "PX",
@@ -77286,7 +77286,7 @@
                                 config: {
                                     delay: 0,
                                     easing: "ease",
-                                    duration: 500,
+                                    duration: 0,
                                     target: { useEventTarget: "CHILDREN", selector: ".header-dropdown-list", selectorGuids: ["56a2e5a6-a01a-0f29-9ce4-426b5b5a7903"] },
                                     yValue: 0,
                                     xUnit: "PX",
@@ -77409,7 +77409,7 @@
                             {
                                 id: "a-6-n-2",
                                 actionTypeId: "STYLE_OPACITY",
-                                config: { delay: 0, easing: "", duration: 500, target: { useEventTarget: "CHILDREN", selector: ".header-dropdown-list", selectorGuids: ["56a2e5a6-a01a-0f29-9ce4-426b5b5a7903"] }, value: 0, unit: "" },
+                                config: { delay: 0, easing: "", duration: 0, target: { useEventTarget: "CHILDREN", selector: ".header-dropdown-list", selectorGuids: ["56a2e5a6-a01a-0f29-9ce4-426b5b5a7903"] }, value: 0, unit: "" },
                             },
                         ],
                     },
@@ -77506,7 +77506,7 @@
                                 config: {
                                     delay: 0,
                                     easing: "",
-                                    duration: 500,
+                                    duration: 0,
                                     target: { useEventTarget: "CHILDREN", selector: ".header-search-dropdown-list", selectorGuids: ["265e22d8-840a-b0ec-0059-b80ceb5ea69d"] },
                                     yValue: 10,
                                     xUnit: "PX",
@@ -77517,7 +77517,7 @@
                             {
                                 id: "a-8-n-3",
                                 actionTypeId: "STYLE_OPACITY",
-                                config: { delay: 0, easing: "", duration: 500, target: { useEventTarget: "CHILDREN", selector: ".header-search-dropdown-list", selectorGuids: ["265e22d8-840a-b0ec-0059-b80ceb5ea69d"] }, value: 0, unit: "" },
+                                config: { delay: 0, easing: "", duration: 0, target: { useEventTarget: "CHILDREN", selector: ".header-search-dropdown-list", selectorGuids: ["265e22d8-840a-b0ec-0059-b80ceb5ea69d"] }, value: 0, unit: "" },
                             },
                             {
                                 id: "a-8-n-4",
@@ -77525,7 +77525,7 @@
                                 config: {
                                     delay: 0,
                                     easing: "",
-                                    duration: 500,
+                                    duration: 0,
                                     target: { useEventTarget: "CHILDREN", selector: ".header-search-dropdown-list", selectorGuids: ["265e22d8-840a-b0ec-0059-b80ceb5ea69d"] },
                                     heightValue: 0,
                                     widthUnit: "PX",
@@ -77557,7 +77557,7 @@
                                 config: {
                                     delay: 0,
                                     easing: "ease",
-                                    duration: 500,
+                                    duration: 0,
                                     target: { useEventTarget: "CHILDREN", selector: ".header-search-dropdown-list", selectorGuids: ["265e22d8-840a-b0ec-0059-b80ceb5ea69d"] },
                                     yValue: 0,
                                     xUnit: "PX",
@@ -77647,7 +77647,7 @@
                             {
                                 id: "a-10-n",
                                 actionTypeId: "STYLE_OPACITY",
-                                config: { delay: 0, easing: "", duration: 500, target: { useEventTarget: "CHILDREN", selector: ".nav-menu", selectorGuids: ["244f7cc6-4561-7a0c-4fc9-d2dcfa9c8622"] }, value: 0, unit: "" },
+                                config: { delay: 0, easing: "", duration: 0, target: { useEventTarget: "CHILDREN", selector: ".nav-menu", selectorGuids: ["244f7cc6-4561-7a0c-4fc9-d2dcfa9c8622"] }, value: 0, unit: "" },
                             },
                         ],
                     },
@@ -77823,7 +77823,7 @@
                                 config: {
                                     delay: 0,
                                     easing: "",
-                                    duration: 500,
+                                    duration: 0,
                                     target: { useEventTarget: "CHILDREN", selector: ".faq-content", selectorGuids: ["a51d5a06-24f8-6e73-67ac-7e54f03e313d"] },
                                     yValue: 100,
                                     xUnit: "PX",
@@ -77837,7 +77837,7 @@
                                 config: {
                                     delay: 0,
                                     easing: "",
-                                    duration: 500,
+                                    duration: 0,
                                     target: { useEventTarget: "CHILDREN", selector: ".faq-content", selectorGuids: ["a51d5a06-24f8-6e73-67ac-7e54f03e313d"] },
                                     xValue: 0.95,
                                     yValue: 0.95,
@@ -77847,7 +77847,7 @@
                             {
                                 id: "a-12-n-3",
                                 actionTypeId: "STYLE_OPACITY",
-                                config: { delay: 0, easing: "", duration: 500, target: { useEventTarget: "CHILDREN", selector: ".faq-content", selectorGuids: ["a51d5a06-24f8-6e73-67ac-7e54f03e313d"] }, value: 0, unit: "" },
+                                config: { delay: 0, easing: "", duration: 0, target: { useEventTarget: "CHILDREN", selector: ".faq-content", selectorGuids: ["a51d5a06-24f8-6e73-67ac-7e54f03e313d"] }, value: 0, unit: "" },
                             },
                             {
                                 id: "a-12-n-4",
@@ -77855,7 +77855,7 @@
                                 config: {
                                     delay: 0,
                                     easing: "",
-                                    duration: 500,
+                                    duration: 0,
                                     target: { useEventTarget: "CHILDREN", selector: ".faq-content", selectorGuids: ["a51d5a06-24f8-6e73-67ac-7e54f03e313d"] },
                                     heightValue: 0,
                                     widthUnit: "PX",
@@ -78121,11 +78121,11 @@
                 actionItemGroups: [
                     {
                         actionItems: [
-                            { id: "a-15-n", actionTypeId: "STYLE_OPACITY", config: { delay: 0, easing: "", duration: 500, target: { selector: ".page-wrapper", selectorGuids: ["f88a12bd-5019-2d7b-5bde-80b35ec71a02"] }, value: 0, unit: "" } },
+                            { id: "a-15-n", actionTypeId: "STYLE_OPACITY", config: { delay: 0, easing: "", duration: 0, target: { selector: ".page-wrapper", selectorGuids: ["f88a12bd-5019-2d7b-5bde-80b35ec71a02"] }, value: 0, unit: "" } },
                             {
                                 id: "a-15-n-3",
                                 actionTypeId: "STYLE_SIZE",
-                                config: { delay: 0, easing: "", duration: 500, target: { selector: ".loading-bar", selectorGuids: ["e9c7d743-dd27-89e1-579b-bc364f24f754"] }, widthValue: 0, widthUnit: "vw", heightUnit: "PX", locked: false },
+                                config: { delay: 0, easing: "", duration: 0, target: { selector: ".loading-bar", selectorGuids: ["e9c7d743-dd27-89e1-579b-bc364f24f754"] }, widthValue: 0, widthUnit: "vw", heightUnit: "PX", locked: false },
                             },
                         ],
                     },
@@ -78134,7 +78134,7 @@
                             {
                                 id: "a-15-n-4",
                                 actionTypeId: "STYLE_OPACITY",
-                                config: { delay: 200, easing: "outExpo", duration: 500, target: { selector: ".page-wrapper", selectorGuids: ["f88a12bd-5019-2d7b-5bde-80b35ec71a02"] }, value: 1, unit: "" },
+                                config: { delay: 200, easing: "outExpo", duration: 0, target: { selector: ".page-wrapper", selectorGuids: ["f88a12bd-5019-2d7b-5bde-80b35ec71a02"] }, value: 1, unit: "" },
                             },
                             {
                                 id: "a-15-n-5",
@@ -78179,10 +78179,10 @@
                 id: "a-30",
                 title: "ðŸ‘» Fade 0.1s",
                 actionItemGroups: [
-                    { actionItems: [{ id: "a-30-n", actionTypeId: "STYLE_OPACITY", config: { delay: 0, easing: "", duration: 1000, target: { useEventTarget: true, id: "5fc5392c-c9e7-f4fc-b214-80ad7ef358a2" }, value: 0, unit: "" } }] },
+                    { actionItems: [{ id: "a-30-n", actionTypeId: "STYLE_OPACITY", config: { delay: 0, easing: "", duration: 50, target: { useEventTarget: true, id: "5fc5392c-c9e7-f4fc-b214-80ad7ef358a2" }, value: 0, unit: "" } }] },
                     {
                         actionItems: [
-                            { id: "a-30-n-2", actionTypeId: "STYLE_OPACITY", config: { delay: 100, easing: "easeInOut", duration: 1000, target: { useEventTarget: true, id: "5fc5392c-c9e7-f4fc-b214-80ad7ef358a2" }, value: 1, unit: "" } },
+                            { id: "a-30-n-2", actionTypeId: "STYLE_OPACITY", config: { delay: 100, easing: "easeInOut", duration: 50, target: { useEventTarget: true, id: "5fc5392c-c9e7-f4fc-b214-80ad7ef358a2" }, value: 1, unit: "" } },
                         ],
                     },
                 ],
@@ -78240,12 +78240,12 @@
                             {
                                 id: "a-26-n-3",
                                 actionTypeId: "STYLE_OPACITY",
-                                config: { delay: 500, easing: "easeInOut", duration: 50, target: { useEventTarget: true, id: "625417fe90f9085a68e499a9|de62e598-5337-c0cb-3178-cb20599fd601" }, value: 1, unit: "" },
+                                config: { delay: 0, easing: "easeInOut", duration: 50, target: { useEventTarget: true, id: "625417fe90f9085a68e499a9|de62e598-5337-c0cb-3178-cb20599fd601" }, value: 1, unit: "" },
                             },
                             {
                                 id: "a-26-n-4",
                                 actionTypeId: "TRANSFORM_MOVE",
-                                config: { delay: 500, easing: "outExpo", duration: 50, target: { useEventTarget: true, id: "625417fe90f9085a68e499a9|de62e598-5337-c0cb-3178-cb20599fd601" }, yValue: 0, xUnit: "PX", yUnit: "px", zUnit: "PX" },
+                                config: { delay: 0, easing: "outExpo", duration: 50, target: { useEventTarget: true, id: "625417fe90f9085a68e499a9|de62e598-5337-c0cb-3178-cb20599fd601" }, yValue: 0, xUnit: "PX", yUnit: "px", zUnit: "PX" },
                             },
                         ],
                     },
@@ -78656,12 +78656,12 @@
                             {
                                 id: "a-22-n-3",
                                 actionTypeId: "STYLE_OPACITY",
-                                config: { delay: 200, easing: "easeInOut", duration: 500, target: { useEventTarget: true, id: "625417fe90f9085a68e499a9|de62e598-5337-c0cb-3178-cb20599fd601" }, value: 1, unit: "" },
+                                config: { delay: 200, easing: "easeInOut", duration: 0, target: { useEventTarget: true, id: "625417fe90f9085a68e499a9|de62e598-5337-c0cb-3178-cb20599fd601" }, value: 1, unit: "" },
                             },
                             {
                                 id: "a-22-n-4",
                                 actionTypeId: "TRANSFORM_MOVE",
-                                config: { delay: 200, easing: "outExpo", duration: 500, target: { useEventTarget: true, id: "625417fe90f9085a68e499a9|de62e598-5337-c0cb-3178-cb20599fd601" }, yValue: 0, xUnit: "PX", yUnit: "px", zUnit: "PX" },
+                                config: { delay: 200, easing: "outExpo", duration: 0, target: { useEventTarget: true, id: "625417fe90f9085a68e499a9|de62e598-5337-c0cb-3178-cb20599fd601" }, yValue: 0, xUnit: "PX", yUnit: "px", zUnit: "PX" },
                             },
                         ],
                     },
@@ -78692,12 +78692,12 @@
                             {
                                 id: "a-44-n-3",
                                 actionTypeId: "TRANSFORM_SCALE",
-                                config: { delay: 200, easing: "outExpo", duration: 500, target: { useEventTarget: true, id: "625417fe90f9085a68e499a9|da4b71ce-7d6f-b02e-0e05-1053dced4de2" }, xValue: 1, yValue: 1, locked: true },
+                                config: { delay: 200, easing: "outExpo", duration: 0, target: { useEventTarget: true, id: "625417fe90f9085a68e499a9|da4b71ce-7d6f-b02e-0e05-1053dced4de2" }, xValue: 1, yValue: 1, locked: true },
                             },
                             {
                                 id: "a-44-n-4",
                                 actionTypeId: "STYLE_OPACITY",
-                                config: { delay: 200, easing: "easeInOut", duration: 500, target: { useEventTarget: true, id: "625417fe90f9085a68e499a9|da4b71ce-7d6f-b02e-0e05-1053dced4de2" }, value: 1, unit: "" },
+                                config: { delay: 200, easing: "easeInOut", duration: 0, target: { useEventTarget: true, id: "625417fe90f9085a68e499a9|da4b71ce-7d6f-b02e-0e05-1053dced4de2" }, value: 1, unit: "" },
                             },
                         ],
                     },
@@ -78860,12 +78860,12 @@
                             {
                                 id: "a-47-n-3",
                                 actionTypeId: "TRANSFORM_SCALE",
-                                config: { delay: 200, easing: "outExpo", duration: 500, target: { useEventTarget: true, id: "625417fe90f9085a68e499a9|da4b71ce-7d6f-b02e-0e05-1053dced4de2" }, xValue: 1, yValue: 1, locked: true },
+                                config: { delay: 200, easing: "outExpo", duration: 0, target: { useEventTarget: true, id: "625417fe90f9085a68e499a9|da4b71ce-7d6f-b02e-0e05-1053dced4de2" }, xValue: 1, yValue: 1, locked: true },
                             },
                             {
                                 id: "a-47-n-4",
                                 actionTypeId: "STYLE_OPACITY",
-                                config: { delay: 200, easing: "easeInOut", duration: 500, target: { useEventTarget: true, id: "625417fe90f9085a68e499a9|da4b71ce-7d6f-b02e-0e05-1053dced4de2" }, value: 1, unit: "" },
+                                config: { delay: 200, easing: "easeInOut", duration: 0, target: { useEventTarget: true, id: "625417fe90f9085a68e499a9|da4b71ce-7d6f-b02e-0e05-1053dced4de2" }, value: 1, unit: "" },
                             },
                         ],
                     },
@@ -79133,12 +79133,12 @@
                             {
                                 id: "a-39-n-3",
                                 actionTypeId: "STYLE_OPACITY",
-                                config: { delay: 200, easing: "easeInOut", duration: 500, target: { useEventTarget: true, id: "625417fe90f9085a68e499a9|de62e598-5337-c0cb-3178-cb20599fd601" }, value: 1, unit: "" },
+                                config: { delay: 200, easing: "easeInOut", duration: 0, target: { useEventTarget: true, id: "625417fe90f9085a68e499a9|de62e598-5337-c0cb-3178-cb20599fd601" }, value: 1, unit: "" },
                             },
                             {
                                 id: "a-39-n-4",
                                 actionTypeId: "TRANSFORM_MOVE",
-                                config: { delay: 200, easing: "outExpo", duration: 500, target: { useEventTarget: true, id: "625417fe90f9085a68e499a9|de62e598-5337-c0cb-3178-cb20599fd601" }, yValue: 0, xUnit: "PX", yUnit: "px", zUnit: "PX" },
+                                config: { delay: 200, easing: "outExpo", duration: 0, target: { useEventTarget: true, id: "625417fe90f9085a68e499a9|de62e598-5337-c0cb-3178-cb20599fd601" }, yValue: 0, xUnit: "PX", yUnit: "px", zUnit: "PX" },
                             },
                         ],
                     },
@@ -79358,7 +79358,7 @@
                                 config: {
                                     delay: 0,
                                     easing: "ease",
-                                    duration: 500,
+                                    duration: 0,
                                     target: { useEventTarget: "CHILDREN", selector: ".filters-dropdown-list", selectorGuids: ["d0698d31-5704-bbed-e99e-1d7c51b6e8d3"] },
                                     yValue: 0,
                                     xUnit: "PX",
@@ -81172,7 +81172,7 @@
                                 config: {
                                     delay: 0,
                                     easing: "",
-                                    duration: 500,
+                                    duration: 0,
                                     target: {
                                         useEventTarget: "CHILDREN",
                                         selector: ".image.position-absolute.gallery-item-image-icon",
@@ -81188,7 +81188,7 @@
                                 config: {
                                     delay: 0,
                                     easing: "",
-                                    duration: 500,
+                                    duration: 0,
                                     target: {
                                         useEventTarget: "CHILDREN",
                                         selector: ".image.position-absolute.gallery-item-image-icon",
@@ -81205,7 +81205,7 @@
                                 config: {
                                     delay: 0,
                                     easing: "",
-                                    duration: 500,
+                                    duration: 0,
                                     target: {
                                         useEventTarget: "CHILDREN",
                                         selector: ".position-absolute.full.filter",
@@ -81470,7 +81470,7 @@
                                         config: {
                                             delay: 0,
                                             easing: "",
-                                            duration: 500,
+                                            duration: 0,
                                             target: { useEventTarget: "CHILDREN", selector: ".split-content.hero-images-left", selectorGuids: ["307f019e-9b20-f633-ca3f-4768d49fd3b3", "b7b5853c-1d63-fae3-67be-93f31090c106"] },
                                             yValue: 87,
                                             xUnit: "PX",
@@ -81484,7 +81484,7 @@
                                         config: {
                                             delay: 0,
                                             easing: "",
-                                            duration: 500,
+                                            duration: 0,
                                             target: { useEventTarget: "CHILDREN", selector: ".split-content.hero-images-left", selectorGuids: ["307f019e-9b20-f633-ca3f-4768d49fd3b3", "b7b5853c-1d63-fae3-67be-93f31090c106"] },
                                             value: 0,
                                             unit: "",
@@ -81496,7 +81496,7 @@
                                         config: {
                                             delay: 0,
                                             easing: "",
-                                            duration: 500,
+                                            duration: 0,
                                             target: { useEventTarget: "CHILDREN", selector: ".split-content.hero-images-right", selectorGuids: ["307f019e-9b20-f633-ca3f-4768d49fd3b3", "77ff342e-8bd9-47d4-3b26-69caa07b0181"] },
                                             yValue: -87,
                                             xUnit: "PX",
@@ -81510,7 +81510,7 @@
                                         config: {
                                             delay: 0,
                                             easing: "",
-                                            duration: 500,
+                                            duration: 0,
                                             target: { useEventTarget: "CHILDREN", selector: ".split-content.hero-images-right", selectorGuids: ["307f019e-9b20-f633-ca3f-4768d49fd3b3", "77ff342e-8bd9-47d4-3b26-69caa07b0181"] },
                                             value: 0,
                                             unit: "",
@@ -81527,7 +81527,7 @@
                                         config: {
                                             delay: 0,
                                             easing: "",
-                                            duration: 500,
+                                            duration: 0,
                                             target: { useEventTarget: "CHILDREN", selector: ".split-content.hero-images-left", selectorGuids: ["307f019e-9b20-f633-ca3f-4768d49fd3b3", "b7b5853c-1d63-fae3-67be-93f31090c106"] },
                                             yValue: 0,
                                             xUnit: "PX",
@@ -81541,7 +81541,7 @@
                                         config: {
                                             delay: 0,
                                             easing: "",
-                                            duration: 500,
+                                            duration: 0,
                                             target: { useEventTarget: "CHILDREN", selector: ".split-content.hero-images-left", selectorGuids: ["307f019e-9b20-f633-ca3f-4768d49fd3b3", "b7b5853c-1d63-fae3-67be-93f31090c106"] },
                                             value: 1,
                                             unit: "",
@@ -81553,7 +81553,7 @@
                                         config: {
                                             delay: 0,
                                             easing: "",
-                                            duration: 500,
+                                            duration: 0,
                                             target: { useEventTarget: "CHILDREN", selector: ".split-content.hero-images-right", selectorGuids: ["307f019e-9b20-f633-ca3f-4768d49fd3b3", "77ff342e-8bd9-47d4-3b26-69caa07b0181"] },
                                             yValue: 0,
                                             xUnit: "PX",
@@ -81567,7 +81567,7 @@
                                         config: {
                                             delay: 0,
                                             easing: "",
-                                            duration: 500,
+                                            duration: 0,
                                             target: { useEventTarget: "CHILDREN", selector: ".split-content.hero-images-right", selectorGuids: ["307f019e-9b20-f633-ca3f-4768d49fd3b3", "77ff342e-8bd9-47d4-3b26-69caa07b0181"] },
                                             value: 1,
                                             unit: "",
@@ -81598,7 +81598,7 @@
                                         config: {
                                             delay: 0,
                                             easing: "",
-                                            duration: 500,
+                                            duration: 0,
                                             target: { useEventTarget: "CHILDREN", selector: ".split-content.hero-images-left", selectorGuids: ["307f019e-9b20-f633-ca3f-4768d49fd3b3", "b7b5853c-1d63-fae3-67be-93f31090c106"] },
                                             yValue: 20,
                                             xUnit: "PX",
@@ -81612,7 +81612,7 @@
                                         config: {
                                             delay: 0,
                                             easing: "",
-                                            duration: 500,
+                                            duration: 0,
                                             target: { useEventTarget: "CHILDREN", selector: ".split-content.hero-images-left", selectorGuids: ["307f019e-9b20-f633-ca3f-4768d49fd3b3", "b7b5853c-1d63-fae3-67be-93f31090c106"] },
                                             value: 0,
                                             unit: "",
@@ -81624,7 +81624,7 @@
                                         config: {
                                             delay: 0,
                                             easing: "",
-                                            duration: 500,
+                                            duration: 0,
                                             target: { useEventTarget: "CHILDREN", selector: ".split-content.hero-images-right", selectorGuids: ["307f019e-9b20-f633-ca3f-4768d49fd3b3", "77ff342e-8bd9-47d4-3b26-69caa07b0181"] },
                                             yValue: -20,
                                             xUnit: "PX",
@@ -81638,7 +81638,7 @@
                                         config: {
                                             delay: 0,
                                             easing: "",
-                                            duration: 500,
+                                            duration: 0,
                                             target: { useEventTarget: "CHILDREN", selector: ".split-content.hero-images-right", selectorGuids: ["307f019e-9b20-f633-ca3f-4768d49fd3b3", "77ff342e-8bd9-47d4-3b26-69caa07b0181"] },
                                             value: 0,
                                             unit: "",
@@ -81655,7 +81655,7 @@
                                         config: {
                                             delay: 0,
                                             easing: "",
-                                            duration: 500,
+                                            duration: 0,
                                             target: { useEventTarget: "CHILDREN", selector: ".split-content.hero-images-left", selectorGuids: ["307f019e-9b20-f633-ca3f-4768d49fd3b3", "b7b5853c-1d63-fae3-67be-93f31090c106"] },
                                             yValue: 0,
                                             xUnit: "PX",
@@ -81669,7 +81669,7 @@
                                         config: {
                                             delay: 0,
                                             easing: "",
-                                            duration: 500,
+                                            duration: 0,
                                             target: { useEventTarget: "CHILDREN", selector: ".split-content.hero-images-left", selectorGuids: ["307f019e-9b20-f633-ca3f-4768d49fd3b3", "b7b5853c-1d63-fae3-67be-93f31090c106"] },
                                             value: 1,
                                             unit: "",
@@ -81681,7 +81681,7 @@
                                         config: {
                                             delay: 0,
                                             easing: "",
-                                            duration: 500,
+                                            duration: 0,
                                             target: { useEventTarget: "CHILDREN", selector: ".split-content.hero-images-right", selectorGuids: ["307f019e-9b20-f633-ca3f-4768d49fd3b3", "77ff342e-8bd9-47d4-3b26-69caa07b0181"] },
                                             yValue: 0,
                                             xUnit: "PX",
@@ -81695,7 +81695,7 @@
                                         config: {
                                             delay: 0,
                                             easing: "",
-                                            duration: 500,
+                                            duration: 0,
                                             target: { useEventTarget: "CHILDREN", selector: ".split-content.hero-images-right", selectorGuids: ["307f019e-9b20-f633-ca3f-4768d49fd3b3", "77ff342e-8bd9-47d4-3b26-69caa07b0181"] },
                                             value: 1,
                                             unit: "",
@@ -81726,7 +81726,7 @@
                                         config: {
                                             delay: 0,
                                             easing: "",
-                                            duration: 500,
+                                            duration: 0,
                                             target: {
                                                 useEventTarget: "CHILDREN",
                                                 selector: ".image-wrapper.borders-radius-12px.about-section-1",
@@ -81744,7 +81744,7 @@
                                         config: {
                                             delay: 0,
                                             easing: "",
-                                            duration: 500,
+                                            duration: 0,
                                             target: {
                                                 useEventTarget: "CHILDREN",
                                                 selector: ".image-wrapper.borders-radius-12px.about-section-1",
@@ -81760,7 +81760,7 @@
                                         config: {
                                             delay: 0,
                                             easing: "",
-                                            duration: 500,
+                                            duration: 0,
                                             target: {
                                                 useEventTarget: "CHILDREN",
                                                 selector: ".image-wrapper.borders-radius-12px.about-section-2",
@@ -81778,7 +81778,7 @@
                                         config: {
                                             delay: 0,
                                             easing: "",
-                                            duration: 500,
+                                            duration: 0,
                                             target: {
                                                 useEventTarget: "CHILDREN",
                                                 selector: ".image-wrapper.borders-radius-12px.about-section-2",
@@ -81799,7 +81799,7 @@
                                         config: {
                                             delay: 0,
                                             easing: "",
-                                            duration: 500,
+                                            duration: 0,
                                             target: {
                                                 useEventTarget: "CHILDREN",
                                                 selector: ".image-wrapper.borders-radius-12px.about-section-1",
@@ -81817,7 +81817,7 @@
                                         config: {
                                             delay: 0,
                                             easing: "",
-                                            duration: 500,
+                                            duration: 0,
                                             target: {
                                                 useEventTarget: "CHILDREN",
                                                 selector: ".image-wrapper.borders-radius-12px.about-section-1",
@@ -81833,7 +81833,7 @@
                                         config: {
                                             delay: 0,
                                             easing: "",
-                                            duration: 500,
+                                            duration: 0,
                                             target: {
                                                 useEventTarget: "CHILDREN",
                                                 selector: ".image-wrapper.borders-radius-12px.about-section-2",
@@ -81851,7 +81851,7 @@
                                         config: {
                                             delay: 0,
                                             easing: "",
-                                            duration: 500,
+                                            duration: 0,
                                             target: {
                                                 useEventTarget: "CHILDREN",
                                                 selector: ".image-wrapper.borders-radius-12px.about-section-2",
@@ -81872,7 +81872,7 @@
                                         config: {
                                             delay: 0,
                                             easing: "",
-                                            duration: 500,
+                                            duration: 0,
                                             target: {
                                                 useEventTarget: "CHILDREN",
                                                 selector: ".image-wrapper.borders-radius-12px.about-section-1",
@@ -81890,7 +81890,7 @@
                                         config: {
                                             delay: 0,
                                             easing: "",
-                                            duration: 500,
+                                            duration: 0,
                                             target: {
                                                 useEventTarget: "CHILDREN",
                                                 selector: ".image-wrapper.borders-radius-12px.about-section-2",
@@ -81918,12 +81918,12 @@
                             {
                                 id: "a-28-n",
                                 actionTypeId: "TRANSFORM_SCALE",
-                                config: { delay: 0, easing: "", duration: 500, target: { useEventTarget: true, id: "625417fe90f9085a68e499a9|da4b71ce-7d6f-b02e-0e05-1053dced4de2" }, xValue: 0.8, yValue: 0.8, locked: true },
+                                config: { delay: 0, easing: "", duration: 0, target: { useEventTarget: true, id: "625417fe90f9085a68e499a9|da4b71ce-7d6f-b02e-0e05-1053dced4de2" }, xValue: 0.8, yValue: 0.8, locked: true },
                             },
                             {
                                 id: "a-28-n-2",
                                 actionTypeId: "STYLE_OPACITY",
-                                config: { delay: 0, easing: "", duration: 500, target: { useEventTarget: true, id: "625417fe90f9085a68e499a9|da4b71ce-7d6f-b02e-0e05-1053dced4de2" }, value: 0, unit: "" },
+                                config: { delay: 0, easing: "", duration: 0, target: { useEventTarget: true, id: "625417fe90f9085a68e499a9|da4b71ce-7d6f-b02e-0e05-1053dced4de2" }, value: 0, unit: "" },
                             },
                         ],
                     },
@@ -81932,12 +81932,12 @@
                             {
                                 id: "a-28-n-3",
                                 actionTypeId: "TRANSFORM_SCALE",
-                                config: { delay: 200, easing: "outExpo", duration: 500, target: { useEventTarget: true, id: "625417fe90f9085a68e499a9|da4b71ce-7d6f-b02e-0e05-1053dced4de2" }, xValue: 1, yValue: 1, locked: true },
+                                config: { delay: 200, easing: "outExpo", duration: 0, target: { useEventTarget: true, id: "625417fe90f9085a68e499a9|da4b71ce-7d6f-b02e-0e05-1053dced4de2" }, xValue: 1, yValue: 1, locked: true },
                             },
                             {
                                 id: "a-28-n-4",
                                 actionTypeId: "STYLE_OPACITY",
-                                config: { delay: 200, easing: "ease", duration: 500, target: { useEventTarget: true, id: "625417fe90f9085a68e499a9|da4b71ce-7d6f-b02e-0e05-1053dced4de2" }, value: 1, unit: "" },
+                                config: { delay: 200, easing: "ease", duration: 0, target: { useEventTarget: true, id: "625417fe90f9085a68e499a9|da4b71ce-7d6f-b02e-0e05-1053dced4de2" }, value: 1, unit: "" },
                             },
                         ],
                     },
@@ -81963,7 +81963,7 @@
                                         config: {
                                             delay: 0,
                                             easing: "",
-                                            duration: 500,
+                                            duration: 0,
                                             target: { useEventTarget: "CHILDREN", selector: ".screenshots-grid.col-1", selectorGuids: ["46d0f3f3-94f2-e598-3da9-205bda75000b", "46d0f3f3-94f2-e598-3da9-205bda750013"] },
                                             yValue: 11,
                                             xUnit: "PX",
@@ -81977,7 +81977,7 @@
                                         config: {
                                             delay: 0,
                                             easing: "",
-                                            duration: 500,
+                                            duration: 0,
                                             target: { useEventTarget: "CHILDREN", selector: ".screenshots-grid.col-2", selectorGuids: ["46d0f3f3-94f2-e598-3da9-205bda75000b", "46d0f3f3-94f2-e598-3da9-205bda750012"] },
                                             yValue: -16,
                                             xUnit: "PX",
@@ -81996,7 +81996,7 @@
                                         config: {
                                             delay: 0,
                                             easing: "",
-                                            duration: 500,
+                                            duration: 0,
                                             target: { useEventTarget: "CHILDREN", selector: ".screenshots-grid.col-1", selectorGuids: ["46d0f3f3-94f2-e598-3da9-205bda75000b", "46d0f3f3-94f2-e598-3da9-205bda750013"] },
                                             yValue: -11,
                                             xUnit: "PX",
@@ -82010,7 +82010,7 @@
                                         config: {
                                             delay: 0,
                                             easing: "",
-                                            duration: 500,
+                                            duration: 0,
                                             target: { useEventTarget: "CHILDREN", selector: ".screenshots-grid.col-2", selectorGuids: ["46d0f3f3-94f2-e598-3da9-205bda75000b", "46d0f3f3-94f2-e598-3da9-205bda750012"] },
                                             yValue: 16,
                                             xUnit: "PX",
@@ -82034,12 +82034,12 @@
                             {
                                 id: "a-16-n",
                                 actionTypeId: "TRANSFORM_MOVE",
-                                config: { delay: 0, easing: "", duration: 500, target: { useEventTarget: true, id: "625417fe90f9085a68e499a9|de62e598-5337-c0cb-3178-cb20599fd601" }, yValue: 60, xUnit: "PX", yUnit: "px", zUnit: "PX" },
+                                config: { delay: 0, easing: "", duration: 0, target: { useEventTarget: true, id: "625417fe90f9085a68e499a9|de62e598-5337-c0cb-3178-cb20599fd601" }, yValue: 60, xUnit: "PX", yUnit: "px", zUnit: "PX" },
                             },
                             {
                                 id: "a-16-n-2",
                                 actionTypeId: "STYLE_OPACITY",
-                                config: { delay: 0, easing: "", duration: 500, target: { useEventTarget: true, id: "625417fe90f9085a68e499a9|de62e598-5337-c0cb-3178-cb20599fd601" }, value: 0, unit: "" },
+                                config: { delay: 0, easing: "", duration: 0, target: { useEventTarget: true, id: "625417fe90f9085a68e499a9|de62e598-5337-c0cb-3178-cb20599fd601" }, value: 0, unit: "" },
                             },
                         ],
                     },
@@ -82048,12 +82048,12 @@
                             {
                                 id: "a-16-n-3",
                                 actionTypeId: "STYLE_OPACITY",
-                                config: { delay: 300, easing: "easeInOut", duration: 500, target: { useEventTarget: true, id: "625417fe90f9085a68e499a9|de62e598-5337-c0cb-3178-cb20599fd601" }, value: 1, unit: "" },
+                                config: { delay: 300, easing: "easeInOut", duration: 0, target: { useEventTarget: true, id: "625417fe90f9085a68e499a9|de62e598-5337-c0cb-3178-cb20599fd601" }, value: 1, unit: "" },
                             },
                             {
                                 id: "a-16-n-4",
                                 actionTypeId: "TRANSFORM_MOVE",
-                                config: { delay: 300, easing: "outExpo", duration: 500, target: { useEventTarget: true, id: "625417fe90f9085a68e499a9|de62e598-5337-c0cb-3178-cb20599fd601" }, yValue: 0, xUnit: "PX", yUnit: "px", zUnit: "PX" },
+                                config: { delay: 300, easing: "outExpo", duration: 0, target: { useEventTarget: true, id: "625417fe90f9085a68e499a9|de62e598-5337-c0cb-3178-cb20599fd601" }, yValue: 0, xUnit: "PX", yUnit: "px", zUnit: "PX" },
                             },
                         ],
                     },
